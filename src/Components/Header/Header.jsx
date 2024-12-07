@@ -4,8 +4,8 @@ import "./Header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { FiArrowRight, FiX } from "react-icons/fi";
-import darkLogo from "../assets/castBunnyLogo.png";
-import lightLogo from "../assets/WhitecastBunnyLogo.png";
+import darkLogo from "../assets/castbunnylogoblack.png";
+import lightLogo from "../assets/castbunnylogowhite.png";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import ToggleButton from "../ToggleButton/toggleButton";
@@ -39,8 +39,8 @@ const Header = ({ toggleTheme, checked }) => {
       {isDesktop ? (
         <div className="HeaderWrap">
           <Link to="/" className="HeaderName">
-            <img src={darkLogo} alt="" className="darkDisplay" />
-            <img src={lightLogo} alt="" className="lightDisplay" />
+            <img src={lightLogo} alt="" className="darkDisplay" />
+            <img src={darkLogo} alt="" className="lightDisplay" />
           </Link>
           <div className="HeaderLinks">
             <Dropdown style={{ backgroundColor: "transparent" }}>
