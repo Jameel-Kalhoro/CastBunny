@@ -1,0 +1,463 @@
+.vodWrap {
+  margin: 0 20px;
+  text-align: left;
+}
+.VoD {
+  background: url("../assets/vod-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0;
+}
+.vodTitle {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #9146ff, #ff00bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Ensure the element takes up space */
+}
+.vodDetail {
+  /* padding-left: 10px; */
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.vodBtnDiv > span {
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.vodLeftBtn,
+.vodGetStarted > button {
+  margin-top: 20px;
+  background: linear-gradient(
+    94.93deg,
+    rgba(145, 70, 255, 0.1) 15.2%,
+    rgba(255, 0, 191, 0.1) 97.92%
+  );
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.darkTheme .vodLeftBtn,
+.darkTheme .vodGetStarted > button {
+  color: white;
+  border: 1px solid white;
+}
+.lightTheme .vodLeftBtn,
+.lightTheme .vodGetStarted > button {
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.vodLeftPriceBtn {
+  margin-top: 15px;
+  background: linear-gradient(
+    94.93deg,
+    rgba(145, 70, 255, 0.1) 15.2%,
+    rgba(255, 0, 191, 0.1) 97.92%
+  );
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.darkTheme .vodLeftPriceBtn {
+  color: white;
+  border: 1px solid white;
+}
+.lightTheme .vodLeftPriceBtn {
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.vodRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vodRightVideoPlaceholder {
+  width: 90%;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.preRecord {
+  margin-top: 90px;
+}
+
+.preRecordHeading {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.preRecordDetails {
+  margin-top: 4em;
+}
+
+.preRecordLeftFeature {
+  display: inline;
+  justify-content: start;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.preRecordRightFeature {
+  display: flex;
+  justify-content: end;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  margin-left: -130px;
+}
+.preRecordFeatureImgPlaceholder {
+  margin-bottom: 40px;
+  border-radius: 20px;
+  height: 180px;
+  background-color: #ddd;
+  width: 80%;
+}
+.preRecordFeatureText {
+  margin-bottom: 40px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 45px;
+}
+
+.customerReviews {
+  margin-top: 60px;
+}
+.customerReviewsHeading {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+.customerReviewsDetails {
+  margin-top: 80px;
+}
+.customerCardWrap {
+  width: 90%;
+  background: linear-gradient(
+    94.93deg,
+    rgba(145, 70, 255, 0.1) 15.2%,
+    rgba(255, 0, 191, 0.1) 97.92%
+  );
+  padding: 25px;
+  border-radius: 20px;
+}
+.customerID {
+}
+.customerImg > img {
+  width: 100%;
+  border-radius: 50px;
+}
+.customerName {
+  font-size: 25px;
+  font-weight: 600;
+}
+.customerDesignation {
+  font-size: 16px;
+}
+.customerComment {
+  font-size: 18px;
+  letter-spacing: 0.25px;
+}
+.brandLogo {
+  border: 1px solid grey;
+  padding: 5px 0;
+  width: 60%;
+}
+
+.vodCollaborate {
+  margin-top: 80px;
+}
+.vodCollaborateHeading {
+  text-align: center;
+}
+.vodCollaborateHeading > div {
+  font-size: 30px;
+  font-weight: 600;
+}
+.vodCollaborateHeading > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+.vodCollaborateDetails,
+.vodGetStarted {
+  margin-top: 50px;
+}
+
+.collaborateDiv > div {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.collaborateDiv > p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.collaborateDivDisplayDiv {
+  width: 70%;
+}
+.collaborateDivDisplay {
+  margin-top: 30px;
+  background-color: rgb(139, 132, 132);
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+.collaborateDivDisplayText {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.vodGetStarted > p {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+.peopleUseHeading {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 60px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.peopleUseDetails h6 {
+  /* margin-top: 30px; */
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+  line-height: 25px;
+}
+
+.vodcustom-slider {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.vodslider-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 400px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.vodslider-item img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 19px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f48ef8; /* Active dot color */
+}
+
+/* Arrows styling */
+.slick-prev:before,
+.slick-next:before {
+  color: white; /* Arrow color */
+  font-size: 45px !important;
+}
+.lightTheme .slick-prev:before,
+.lightTheme .slick-next:before {
+  color: black; /* Arrow color */
+}
+
+/* MOBILE RESPONSIVE CODE  */
+
+@media screen and (max-width: 1160px) {
+  .vodDetail {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .vodTitle {
+    font-size: 23px;
+  }
+  .vodDetail {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .vodTitle {
+    font-size: 22px;
+  }
+  .vodDetail {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .vodTitle {
+    font-size: 22px;
+  }
+  .vodDetail {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .VoD {
+    padding: 40px 0;
+  }
+  .vodTitle {
+    font-size: 24px;
+  }
+  .vodDetail {
+    font-size: 35px;
+  }
+  .vodLeft {
+    margin-bottom: 30px;
+  }
+  .preRecordFeatureText {
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+
+  .preRecordLeftFeature {
+    font-size: 23px;
+  }
+
+  .preRecordRightFeature {
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: -25px;
+  }
+  .preRecordFeatureImg {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .vodRight > video {
+    width: 100%;
+  }
+
+  .customerReviews {
+    margin-top: 40px;
+  }
+  .customerReviewsHeading {
+    font-size: 25px;
+  }
+  .customerReviewsDetails {
+    margin-left: 10%;
+    margin-top: 40px;
+  }
+  .customerCardWrap {
+    width: 90%;
+  }
+  .customerImg > img {
+    width: 70%;
+  }
+  .customerName {
+    font-size: 15px;
+  }
+  .customerDesignation {
+    font-size: 15px;
+  }
+  .customerComment {
+    font-size: 12px;
+  }
+  .brandLogo {
+    font-size: 12px;
+  }
+
+  .vodCollaborateHeading > div {
+    font-size: 22px;
+  }
+  .vodCollaborateHeading > p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .vodCollaborateDetails,
+  .vodGetStarted {
+    margin-top: 30px;
+  }
+
+  .collaborateDiv > div {
+    width: 10px;
+    height: 10px;
+  }
+  .collaborateDiv > p {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .collaborateDivDisplayDiv {
+    width: 90%;
+  }
+  .collaborateDivDisplay {
+    margin-top: 20px;
+    height: 300px;
+  }
+  .collaborateDivDisplayText {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .vodGetStarted > p {
+    font-size: 20px;
+  }
+  .vodGetStarted > button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .vodTitle {
+    font-size: 18px;
+  }
+  .vodDetail {
+    font-size: 26px;
+  }
+  .preRecordHeading {
+    font-size: 26px;
+  }
+  .preRecordRightFeature,
+  .preRecordLeftFeature {
+    font-size: 20px;
+  }
+  .preRecordFeatureText {
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    line-height: 25px;
+  }
+}

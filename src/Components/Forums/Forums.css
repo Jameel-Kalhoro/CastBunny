@@ -1,0 +1,324 @@
+.forumWrap {
+  margin: 50px 0px;
+}
+/* .forumHeading {
+  background: url("../assets/vod-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+} */
+
+.forumHeadingLeft {
+  /* width: 80%; */
+}
+.forumHeadingLeft > h1 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.forumHeadingLeft > p {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.forumHeadingInput {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+.lightTheme .forumHeadingInput .searchIcon {
+  color: rgb(207, 204, 204);
+}
+.darkTheme .forumHeadingInput .searchIcon {
+  color: rgb(43, 42, 42);
+}
+
+.forumHeadingInput .searchIcon {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  left: 1%;
+  top: 20%;
+}
+.lightTheme .forumHeadingLeft > .forumHeadingInput > input {
+  background-color: var(--bg-color);
+  color: white;
+}
+.forumHeadingLeft > .forumHeadingInput > input {
+  width: 80%;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 6px 15px 6px 40px;
+}
+
+.forumHeadingRight {
+  background-color: rgb(168, 168, 168);
+  height: 100%;
+  width: 100%;
+}
+.categories {
+  margin-left: 80px;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+.lightTheme .categories button {
+  border: 1px solid var(--bg-color);
+}
+.darkTheme .categories button {
+  border: 1px solid #ccc;
+}
+
+.categories button {
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  padding: 3px 15px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.categories .active {
+  background-color: white;
+  color: black;
+}
+
+.forum-list {
+  padding-right: 50px;
+  margin-top: 20px;
+  border-right: 2px solid rgba(145, 70, 255, 1);
+}
+
+/* Updated styles for forum-item */
+.forum-list .forum-item {
+  display: grid;
+  grid-template-columns: 1fr 400px 100px; /* Title, Replies, Views */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.lightTheme .forum-list .forum-item {
+  border-bottom: 1px solid var(--bg-color);
+}
+.forum-list .forum-item > p {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.forum-list .forum-item > span {
+  /* padding: 0 20px; */
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: linear-gradient(
+    90deg,
+    rgba(145, 70, 255, 1),
+    rgba(255, 0, 191, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forumCategoriesHeading {
+  margin: 70px 60px 0px 80px;
+}
+
+.forumCategories > h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.categoryRight {
+  padding: 30px 10px;
+}
+.categoryRightDiscussion {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 15px;
+  border: 2px solid white;
+  text-align: center;
+}
+.categoryContributor {
+  margin-top: 40px;
+}
+.categoryContributor > h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.lightTheme .contributorImg {
+  background-color: var(--bg-color);
+}
+.contributorImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white;
+}
+.contributorName {
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.contributorInfo {
+  margin-top: 30px;
+}
+
+.view-more {
+  padding: 5px 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+}
+.lightTheme .view-more {
+  background-color: var(--bg-color);
+  color: white;
+}
+@media screen and (max-width: 970px) {
+  .forum-list .forum-item {
+    grid-template-columns: 1fr 200px 100px;
+  }
+  /* .forum-list {
+    padding-right: 10px;
+  } */
+}
+@media screen and (max-width: 825px) {
+  .forum-list {
+    border-right: none;
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .forum-list .forum-item {
+    grid-template-columns: 1fr 80px 80px; /* Adjust for smaller widths */
+  }
+  .forumHeadingRight {
+    height: 200px;
+    margin-top: 20px;
+  }
+  .forum-list {
+    border-right: none;
+    padding: 0 5%;
+  }
+  .categoryContributor > h5 {
+    margin-bottom: 0;
+  }
+  .forumCategoriesHeading {
+    margin: 50px 0px 0px 50px;
+  }
+  .categories {
+    margin-left: 50px;
+  }
+  .forumHeadingLeft > h1 {
+    font-size: 35px;
+  }
+  .forumHeadingLeft > p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .forumHeadingInput {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .categories button {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .forum-list .forum-item > p {
+    font-size: 15px;
+  }
+  .forum-list .forum-item > span {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+  .categories button {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .forum-list .forum-item > p {
+    font-size: 12px;
+  }
+  .forum-list .forum-item > span {
+    font-size: 12px;
+  }
+  .view-more {
+    font-size: 12px;
+  }
+  .categoryRightDiscussion {
+    font-size: 15px;
+  }
+  .categoryContributor > h5 {
+    font-size: 18px;
+  }
+  .contributorName {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .forumCategoriesHeading {
+    margin-top: 30px;
+  }
+  .forumHeadingLeft > h1 {
+    font-size: 25px;
+  }
+  .forumHeadingLeft > p {
+    font-size: 15px;
+  }
+  .forumHeadingLeft > .forumHeadingInput > input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .categoryRightDiscussion {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  .categoryRight {
+    padding-top: 0;
+  }
+  .categoryContributor {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .forum-list .forum-item > p {
+    font-size: 10px;
+  }
+  .forum-list .forum-item > span {
+    font-size: 10px;
+  }
+  .forum-list .forum-item {
+    grid-template-columns: 1fr 50px 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .forumCategoriesHeading {
+    margin: 70px 0px 0px 5%;
+  }
+  .categories {
+    margin-left: 5%;
+  }
+}

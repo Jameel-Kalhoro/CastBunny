@@ -1,0 +1,329 @@
+.homeWrap {
+  padding-top: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+}
+.homeHeading {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Raleway", Arial !important;
+}
+
+.homeDetails {
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.homeHeading > span {
+  font-weight: 500;
+}
+
+.socialWrap {
+  display: flex;
+  flex-direction: column;
+
+  /* padding-left: 40px; */
+}
+.google,
+.facebook {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.lightTheme .google,
+.lightTheme .facebook {
+  background-color: black;
+  color: white;
+}
+.google > a,
+.facebook > a {
+  text-decoration: none;
+  font-weight: 550;
+  color: inherit;
+}
+
+.google > a > span,
+.facebook > a > span {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.facebook > a > span > img {
+  height: 20px;
+}
+
+.enterEmail {
+  margin-top: 15px;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.enterEmail > input {
+  background-color: black;
+  border: none;
+  width: 280px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.enterEmail > input::placeholder {
+  color: grey;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.enterEmail > input[type="text"]:focus {
+  outline: none;
+}
+
+.emailSignUp {
+  color: black;
+  text-decoration: none;
+  background-color: #ffa812;
+  border: none;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 30px;
+  /* padding: 0; */
+}
+
+.darkTheme .google,
+.darkTheme .facebook {
+  background-color: white;
+  color: black;
+}
+
+.darkTheme .enterEmail > input {
+  background-color: white;
+  color: black;
+}
+
+.homeTermOfService {
+  font-size: 12px;
+  color: grey;
+}
+
+.homeTermOfService .TermofServiceLink {
+  /* text-decoration: underline; */
+  color: inherit;
+}
+
+.alreadyAccount {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.alreadyAccount .loginLink {
+  color: inherit;
+}
+
+.right .dark > img,
+.right .light > img {
+  width: 80%;
+}
+
+.darkTheme .right .light {
+  display: none;
+}
+
+.lightTheme .right .dark {
+  display: none;
+}
+.right .dark,
+.right .light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.or {
+  font-weight: 500;
+  margin-top: 5px;
+  padding-left: 12rem;
+}
+
+.homePageLogos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePageLogos > a > img {
+  margin: 0 20px;
+  width: 30px;
+}
+
+/* Mobile Responsive Query */
+
+@media screen and (max-width: 1199px) {
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeHeading {
+    font-size: 32px;
+  }
+
+  .homeDetails {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .homeWrap {
+    padding-top: 40px;
+  }
+
+  .homeHeading {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+
+  .homeDetails {
+    padding-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .google,
+  .facebook {
+    width: 300px;
+    padding: 5px;
+  }
+
+  .enterEmail > input {
+    background-color: black;
+    border: none;
+    width: 230px;
+  }
+
+  .homeTermOfService {
+    font-size: 10px;
+  }
+
+  .or {
+    font-weight: 500;
+    margin-top: 5px;
+    padding-left: 9rem;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .homePageLogos {
+    margin-top: 20px;
+  }
+  .homePageLogos > a > img {
+    margin: 0 15px;
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeWrap {
+    padding-top: 30px;
+  }
+
+  .left {
+    align-items: center;
+  }
+  .homeHeading {
+    font-size: 30px;
+  }
+
+  .homeDetails {
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .google,
+  .facebook {
+    width: 300px;
+    padding: 5px;
+  }
+
+  .enterEmail > input {
+    /* width: 100%; */
+    padding: 5px 5px 5px 12px;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .homeTermOfService {
+    font-size: 10px;
+  }
+
+  .alreadyAccount {
+    margin-bottom: 20px;
+  }
+
+  .or {
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homeHeading {
+    font-size: 25px;
+  }
+  .homeDetails {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .homeHeading {
+    font-size: 22px;
+  }
+  .homeDetails {
+    font-size: 12px;
+  }
+  .google,
+  .facebook {
+    font-size: 15px;
+    width: 270px;
+    padding: 2px;
+  }
+  .enterEmail {
+    width: 90%;
+  }
+  .enterEmail > input {
+    width: 100%;
+    /* padding-top: 10px; */
+    font-size: 12px;
+  }
+  .enterEmail > input::placeholder {
+    font-size: 12px;
+  }
+
+  .homeTermOfService {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .emailSignUp {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

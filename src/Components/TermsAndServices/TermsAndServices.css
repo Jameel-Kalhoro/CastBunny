@@ -1,0 +1,103 @@
+.TermsAndServicesWrap {
+  margin: 40px 60px;
+}
+.TermsAndServicesHeading {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.TermsAndServicesDetailsWrap {
+  margin-top: 40px;
+}
+.TermsAndServicesDetails > div {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.TermsAndServicesDetails > p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .TermsAndServicesWrap {
+    margin: 30px 40px;
+  }
+  .TermsAndServicesHeading {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .TermsAndServicesDetailsWrap {
+    margin-top: 20px;
+  }
+  .TermsAndServicesDetails > div {
+    font-size: 18px;
+  }
+  .TermsAndServicesDetails > p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .TermsAndServicesWrap {
+    margin: 25px 40px;
+  }
+  .TermsAndServicesHeading {
+    font-size: 22px;
+  }
+  .TermsAndServicesDetailsWrap {
+    margin-top: 15px;
+  }
+  .TermsAndServicesDetails > div {
+    font-size: 15px;
+  }
+  .TermsAndServicesDetails > p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .TermsAndServicesWrap {
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .TermsAndServicesWrap {
+    margin: 20px 20px;
+  }
+  .TermsAndServicesHeading {
+    font-size: 15px;
+  }
+  .TermsAndServicesDetailsWrap {
+    margin-top: 10px;
+  }
+  .TermsAndServicesDetails > div {
+    font-size: 12px;
+  }
+  .TermsAndServicesDetails > p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .TermsAndServicesWrap {
+    margin: 10px;
+  }
+  .TermsAndServicesHeading {
+    font-size: 12px;
+  }
+  .TermsAndServicesDetailsWrap {
+    margin-top: 5px;
+  }
+  .TermsAndServicesDetails > div {
+    font-size: 10px;
+  }
+  .TermsAndServicesDetails > p {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+}

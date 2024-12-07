@@ -1,0 +1,359 @@
+.signupWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  background: url("../assets/about-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signupHeading {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+
+.darkTheme .signupCard {
+  margin-top: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  /* opacity: 0.7; */
+  padding: 20px 50px;
+  border-radius: 30px;
+}
+
+.lightTheme .signupCard {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 30px;
+  /* opacity: 0.8; */
+}
+
+.cardTitle {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cardInputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.cardInputs > p {
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.cardInputs > input {
+  width: 320px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d3d2d2;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cardInputs > input::placeholder {
+  color: black;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.signupBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+}
+
+.continueWithGoogleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.continueWithGoogleBtn > button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  width: 320px;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+}
+.continueWithGoogleBtn > button > span {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.lightTheme .signupBtn {
+  background-color: white;
+  color: black;
+}
+
+.lightTheme .continueWithGoogleBtn > button {
+  background-color: white;
+  color: black;
+}
+
+.cardOR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 800;
+  /* margin-bottom: 10px; */
+}
+.cardOR > span {
+  width: 40%;
+  margin: 0 10px;
+}
+
+.cardOR > span > hr {
+  border-top: 2px solid black !important;
+}
+
+.lightTheme .cardOR > span > hr {
+  border-top: 2px solid white !important;
+}
+
+.cardLogin {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.cardLogin .cardLoginLinkRoute {
+  color: inherit;
+}
+
+.signUpTermOrServices {
+  margin-top: 20px;
+  width: 400px;
+  font-size: 17px;
+  text-align: center;
+}
+.signUpTermOrServicesRoute {
+  color: inherit;
+}
+
+.loginForgotPass {
+  margin-top: -8px;
+  margin-left: 20px;
+  margin-bottom: 8px !important;
+}
+
+.loginForgotPass > a {
+  /* text-decoration: none; */
+  color: inherit;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .signupWrap {
+    margin: 20px 0;
+  }
+
+  .signupHeading {
+    font-size: 35px;
+  }
+
+  .darkTheme .signupCard {
+    margin-top: 20px;
+    padding: 10px 30px;
+  }
+
+  .cardTitle {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .cardInputs > p {
+    font-size: 16px;
+  }
+
+  .cardInputs > input {
+    margin-bottom: 10px;
+  }
+
+  .cardInputs > input::placeholder {
+    font-size: 16px;
+  }
+
+  .signupBtn {
+    padding: 8px 10px;
+  }
+
+  .continueWithGoogleBtn > button {
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+
+  .cardLogin {
+    margin-bottom: 15px;
+  }
+
+  .signUpTermOrServices {
+    margin-top: 15px;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .signupWrap {
+    margin: 20px 0;
+  }
+
+  .signupHeading {
+    font-size: 30px;
+  }
+
+  .darkTheme .signupCard {
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .cardTitle {
+    font-size: 30px;
+  }
+  .cardInputs {
+    margin: 20px 10px 0 10px;
+  }
+  .cardInputs > p {
+    font-size: 14px;
+  }
+
+  .cardInputs > input {
+    width: 310px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  .cardInputs > input::placeholder {
+    font-size: 15px;
+  }
+
+  .signupBtn {
+    padding: 5px 10px;
+    width: 310px;
+  }
+
+  .continueWithGoogleBtn > button {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 310px;
+    font-size: 16px;
+  }
+  .continueWithGoogleBtn > button > span {
+    margin: 0 5px;
+    font-size: 17px;
+  }
+
+  .cardOR > span {
+    margin: 0 10px;
+  }
+
+  .cardLogin {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .cardLogin .cardLoginLinkRoute {
+    color: inherit;
+  }
+
+  .signUpTermOrServices {
+    margin-top: 15px;
+    width: 320px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .cardTitle {
+    font-size: 25px;
+  }
+  .cardInputs {
+    margin: 10px 10px 0 10px;
+  }
+  .cardInputs > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .cardInputs > input {
+    width: 230px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .cardInputs > input::placeholder {
+    font-size: 15px;
+  }
+
+  .signupBtn {
+    padding: 5px 10px;
+    width: 230px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .continueWithGoogleBtn > button {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 230px;
+    font-size: 15px;
+  }
+  .continueWithGoogleBtn > button > span {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+
+  .cardOR > span {
+    margin: 0 10px;
+  }
+
+  .cardLogin {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .cardLogin .cardLoginLinkRoute {
+    color: inherit;
+  }
+
+  .signUpTermOrServices {
+    margin-top: 15px;
+    width: 270px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .loginForgotPass > a {
+    font-size: 12px;
+  }
+}

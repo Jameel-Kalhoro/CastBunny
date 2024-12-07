@@ -1,0 +1,1002 @@
+.multiStreamingWrap {
+  margin: 40px 0;
+}
+.multiStreamingWrap .multiStreamingTitle h6 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 74.92%);
+  -webkit-background-clip: text; /* Required for Webkit browsers */
+  -webkit-text-fill-color: transparent; /* Ensures text appears with gradient */
+  background-clip: text; /* Optional for extra compatibility */
+  text-fill-color: transparent; /* Optional fallback */
+}
+
+.multiStreamingWrap .multiStreamingTitle > p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.multiStreamingWrap .multiStreamingDestination {
+  margin-top: 20px;
+}
+
+.multiStreamingWrap .multiStreamingDestination > h5 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.multiStreamingWrap .multiStreamingDestination p {
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  width: 80%;
+}
+
+.multiStreamingWrap .multiStreamingDestination p > span {
+  font-size: 25px;
+  font-weight: 600;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 97.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for extra compatibility */
+  text-fill-color: transparent;
+}
+.multiStreamingCards {
+  margin-top: 30px;
+}
+
+.multiStreamingCard {
+  background-color: var(--bg-color) !important;
+  border-radius: 15px !important; /* Apply rounded corners to the card content */
+  padding: 20px !important;
+  width: 300px !important;
+  height: 370px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.lightTheme .multiStreamingCard {
+  background-color: white !important;
+}
+
+.multiStreamingCard h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.multiStreamingCard p {
+  font-size: 15px;
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.lightTheme .multiStreamingCard p,
+.lightTheme .multiStreamingCard > h3,
+.lightTheme .card-meta {
+  color: var(--bg-color);
+}
+
+.multiStreamingIntegration {
+  margin-top: 40px;
+}
+
+.multiStreamingIntegration h2 {
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+.seamlessBadge {
+  background-color: #2d032f;
+  border-radius: 30px;
+}
+.seamlessBadge p {
+  padding: 3px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 97.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for extra compatibility */
+  text-fill-color: transparent;
+}
+
+.multiStreamingIntegration > p {
+  margin-top: 15px;
+  font-size: 20px;
+  width: 85%;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.foreground {
+  margin-top: 20px;
+
+  position: relative;
+  z-index: 13; /* Keeps the content above the blur */
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+}
+.lightTheme .foreground {
+  color: black;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(28, 2, 37, 0.8) 97.65%,
+    rgba(32, 4, 42, 0.1) 10%
+  );
+  filter: blur(20px); /* Start with a stronger blur */
+}
+.lightTheme .blur-background {
+  background: transparent;
+}
+
+.blurBgContainer {
+  position: relative;
+  /* width: 300px; Adjust as needed */
+  /* height: 200px; Adjust as needed */
+  overflow: hidden; /* Ensures no overflow if blur spreads */
+  border-radius: 10px; /* Matches the blur for seamless edges */
+}
+
+.multiStreamContainer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Keeps the content above the blur */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.multiStreamingTakeControl {
+  margin-top: 4em;
+}
+
+.multiStreamingTakeControl h2 {
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.multiStreamingTakeControlDetails {
+  margin-top: 30px;
+}
+
+.multiStreamingTakeControlDetails > h4 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 10px 0 10px 80px;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 38.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for extra compatibility */
+  text-fill-color: transparent;
+}
+
+.multiStreamingTakeControlDetails > h6 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin: 10px 0 40px 80px;
+  width: 90%;
+}
+
+.card-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 300px;
+}
+.lightTheme .card-container {
+  color: var(--bg-color);
+}
+
+.card1 {
+  height: 500px;
+}
+.card3 {
+  height: 300px;
+}
+.card4 {
+  height: 500px;
+  margin-top: -200px;
+}
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card1 .glass-box {
+  height: 70%;
+}
+.card2 .glass-box {
+  height: 90%;
+  width: 200%;
+}
+.card3 .glass-box {
+  height: 60%;
+}
+.card4 .glass-box {
+  height: 70%;
+}
+
+.glass-box {
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.card4 .card-text {
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.card2 .card-title {
+  font-size: 20px;
+}
+.card2 .card-text {
+  font-size: 15px;
+  width: 80%;
+}
+.multiStreamingUseCase {
+  margin-top: 30px;
+}
+
+.multiStreamingUseCase h3 {
+  font-weight: 550;
+  letter-spacing: 0.25px;
+}
+
+.multiStreamingUseCase > .multiStreamingTakeControlDetails > h4 {
+  font-size: 30px;
+}
+
+.multiStreamingUseCase > .multiStreamingTakeControlDetails > h6 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.useCaseLargePlaceholder {
+  background-color: #ddd;
+  width: 100%;
+  border-radius: 20px;
+  height: 290px;
+}
+
+.useCaseSmallPlaceholder {
+  background-color: #ddd;
+  width: 50%;
+  border-radius: 20px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.userReviews {
+  margin-top: 4em;
+}
+.lightTheme .userReviews {
+  color: white;
+}
+.userReviews > h3 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 10px 0 0px 4em;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 34.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for extra compatibility */
+  text-fill-color: transparent;
+}
+
+.reviewDiv {
+  padding: 30px 0 30px 50px;
+
+  margin: 2em 9em;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(94.93deg, #180728 15.2%, #220123 97.92%);
+}
+
+.multiStreamingUserRemarks > p {
+  margin-right: 10px;
+  margin-top: -25px;
+}
+
+.multiStreamingUserDesignation {
+  margin-bottom: 20px;
+}
+.leftAppos.multiStreamingLeftAppos {
+  bottom: -35%;
+}
+.multiStreamingGetStarted {
+  margin-top: 6em;
+  padding: 30px 40px;
+}
+.multiStreamingGetStarted > .reachMoreText {
+  font-size: 30px;
+}
+.multiStreamingGetStartedText {
+  margin-top: 10px;
+  font-size: 24px;
+  letter-spacing: 0.75px;
+}
+
+.multiStreamingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.multiStreamingIllustration {
+  margin-top: 4em;
+}
+
+.outer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small-box {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.large-box {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  border-radius: 20px;
+  background: #ddd;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiStreamingSwitch {
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+.leftDivSwitch.multiStreamingSwitch {
+  left: 10px;
+}
+.rightDivSwitch.multiStreamingSwitch {
+  right: 5px;
+}
+.circle {
+  position: absolute;
+
+  top: -20px;
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.circle.rightDivCircle {
+  left: -20px;
+}
+.circle.leftDivCircle {
+  right: -20px;
+}
+
+.multiStreamingSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.multiStreamingSlider {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 97.92%);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.multiStreamingSlider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: -1px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .multiStreamingSlider {
+  background: linear-gradient(94.93deg, #9146ff 15.2%, #ff00bf 97.92%);
+}
+input:checked + .multiStreamingSlider:before {
+  transform: translateX(14px);
+}
+.arrows {
+  margin-top: 20px;
+}
+.arrows > img {
+  width: 70%;
+}
+
+@media screen and (max-width: 1090px) {
+  .multiStreamingGetStartedText {
+    font-size: 20px;
+  }
+  .multiStreamingGetStarted {
+    margin-top: 4em;
+  }
+  .multiStreamingUserRemarks {
+    font-size: 16px;
+  }
+  .multiStreamingCard {
+    padding: 15px !important;
+    width: 100% !important;
+  }
+  .multiStreamingCard h3 {
+    font-size: 20px;
+  }
+
+  .multiStreamingCard p {
+    font-size: 12px;
+  }
+  .leftAppos.multiStreamingLeftAppos {
+    font-size: 60px;
+    bottom: -25%;
+  }
+  .multiStreamingUserRemarks > p {
+    font-size: 60px;
+    margin-bottom: 20%;
+  }
+  .userImgPlaceholder {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .multiStreamingGetStartedText {
+    font-size: 18px;
+  }
+  .multiStreamingUserName {
+    font-size: 40px;
+  }
+  .userDesignation {
+    font-size: 20px;
+  }
+  .multiStreamingUserRemarks {
+    /* width: 110%; */
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .multiStreamingUserName {
+    font-size: 35px;
+  }
+  .multiStreamingUserDesignation {
+    font-size: 16px;
+  }
+  .multiStreamingUserRemarks {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .multiStreamingGetStarted > .reachMoreText {
+    font-size: 26px;
+  }
+  .multiStreamingGetStartedText {
+    font-size: 16px;
+  }
+
+  .reviewDiv {
+    margin: 2em 4em;
+  }
+  .multiStreamingUserName {
+    /* font-size: 30px; */
+  }
+  .multiStreamingUserDesignation {
+    font-size: 18px;
+  }
+  .multiStreamingUserRemarks {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .leftAppos.multiStreamingLeftAppos {
+    bottom: -35%;
+    right: 5%;
+  }
+  .userReviews > h3 {
+    margin: 10px 0 0px 10%;
+  }
+  .useCaseSmallPlaceholder {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outer-container {
+    margin: auto 1.5em;
+  }
+
+  .small-box {
+    width: 100%;
+    height: 90px;
+    border-radius: 20px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .large-box {
+    height: 220px;
+  }
+
+  .multiStreamingGetStarted {
+    margin: 2em;
+    padding: 20px;
+  }
+  .userReviews > h3 {
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  .multiStreamingUseCase > .multiStreamingTakeControlDetails > h4 {
+    font-size: 25px;
+    margin-left: 10%;
+  }
+  .multiStreamingUseCase > .multiStreamingTakeControlDetails > h6 {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+
+  .useCaseSmallPlaceholder {
+    width: 70%;
+  }
+  .useCaseLarge {
+    width: 100%;
+  }
+  .userImgPlaceholder {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+  }
+  .reviewDiv {
+    margin: 1em 4em;
+  }
+  .leftAppos.multiStreamingLeftAppos {
+    bottom: -15%;
+    right: 10%;
+  }
+  .multiStreamingCard {
+    height: 320px;
+  }
+  .multiStreamingWrap .multiStreamingTitle h6 {
+    font-size: 35px;
+  }
+  .multiStreamingWrap .multiStreamingTitle > p {
+    font-size: 15px;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+  .multiStreamingWrap .multiStreamingDestination {
+    margin-top: 10px;
+  }
+  .multiStreamingWrap .multiStreamingDestination > h5 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .multiStreamingWrap .multiStreamingDestination p {
+    font-size: 15px;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .multiStreamingWrap .multiStreamingDestination p > span {
+    font-size: 22px;
+  }
+  .multiStreamingTitle.mt-5 {
+    margin-top: 0 !important;
+  }
+
+  .multiStreamingDivs {
+    margin-top: -20px;
+  }
+
+  .multiStreamingCards {
+    margin: 30px 25%;
+  }
+  .multiStreamingWrap {
+    margin: 40px 0;
+  }
+  .multiStreamingIntegration > p {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 90%;
+  }
+  .box {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .multiStreamContainer {
+    gap: 30px;
+  }
+
+  .multiStreamingTakeControlDetails {
+    margin-top: 10px;
+  }
+  .multiStreamingTakeControlDetails > h4 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .multiStreamingTakeControlDetails > h6 {
+    font-size: 16px;
+    margin: 10px 0 20px 30px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+  }
+
+  .card1 {
+    height: 320px;
+  }
+  .card3 {
+    height: 320px;
+  }
+  .card4 {
+    height: 320px;
+    margin-top: 0;
+  }
+  .card2 {
+    gap: 20px;
+  }
+
+  .card1 .glass-box {
+    height: 70%;
+  }
+  .card3 .glass-box {
+    height: 60%;
+  }
+  .card4 .glass-box {
+    height: 70%;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+  .card4 .card-text {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .card2 .card-title {
+    font-size: 20px;
+  }
+  .card2 .card-text {
+    font-size: 13px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .multiStreamingGetStartedText {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 605px) {
+  .leftAppos.multiStreamingLeftAppos {
+    bottom: -27%;
+    right: 12%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .arrows {
+    margin-top: 10px;
+  }
+  .outer-container {
+    gap: 25px;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+  .multiStreamingSwitch {
+    top: 6px;
+  }
+  .rightDivSwitch.multiStreamingSwitch {
+    right: 2px;
+  }
+  .multiStreamingWrap .multiStreamingTitle > p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .multiStreamingWrap .multiStreamingTitle h6 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .multiStreamingWrap .multiStreamingDestination p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .hostDiv > div {
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .hostDiv > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .hostRightDiv {
+    width: 100%;
+  }
+  .multiStreamingIntegration > p {
+    font-size: 12px;
+  }
+  .multiStreamContainer {
+    gap: 20px;
+  }
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+  .multiStreamingTakeControl {
+    margin-top: 2em;
+  }
+  .multiStreamingTakeControlDetails > h4 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .multiStreamingTakeControlDetails > h6 {
+    font-size: 12px;
+  }
+  .multiStreamingWrap .multiStreamingDestination p > span {
+    font-size: 16px;
+  }
+  .host,
+  .liveVideo,
+  .interViews {
+    margin: 2em 20px 0 20px;
+  }
+  .multiStreamingCards {
+    margin: 20px 15%;
+  }
+  .multiStreamingCard {
+    height: auto;
+  }
+  .multiStreamingGetStarted .reachMoreText {
+    font-size: 22px;
+  }
+  .multiStreamingGetStartedText {
+    font-size: 12px;
+  }
+  .useCaseLargePlaceholder {
+    margin-top: 20px;
+  }
+  .useCaseSmallPlaceholder {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .multiStreamingIllustration {
+    margin-top: 2em;
+  }
+  .outer-container {
+    margin: auto 1em;
+  }
+  .large-box {
+    height: 170px;
+  }
+  .small-box {
+    height: 75px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+  }
+  .circle.rightDivCircle {
+    left: -14px;
+  }
+  .circle.leftDivCircle {
+    right: -14px;
+  }
+  .reviewDiv {
+    margin: 1em 2em;
+  }
+  .multiStreamingUserRemarks {
+    font-size: 13px;
+  }
+  .leftAppos.multiStreamingLeftAppos {
+    bottom: -27%;
+    right: 1%;
+  }
+  .multiStreamingUserRemarks > p {
+    margin-right: 0;
+    margin-bottom: 15%;
+  }
+  .userImgPlaceholder {
+    height: 170px;
+  }
+  .multiStreamingUserDesignation {
+    font-size: 16px;
+  }
+  .multiStreamingUserName {
+    font-size: 25px;
+  }
+  .userCompany {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .card2 {
+    gap: 10px;
+  }
+  .card2 .glass-box {
+    height: 90%;
+    width: 300%;
+  }
+  .card2 .card-text {
+    width: 100%;
+  }
+  .card4 {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .multiStreamingSwitch {
+    width: 24px;
+    height: 15px;
+    top: 5px;
+  }
+  .multiStreamingSlider:before {
+    height: 8px;
+    width: 8px;
+    left: -4px;
+  }
+  .rightDivSwitch.multiStreamingSwitch {
+    right: 1px;
+  }
+  .leftDivSwitch.multiStreamingSwitch {
+    left: 7px;
+  }
+
+  .multiStreamingCards {
+    margin: 20px 10%;
+  }
+  .multiStreamingGetStarted {
+    margin: 1em;
+    padding: 15px;
+  }
+  .reviewDiv {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .outer-container {
+    gap: 15px;
+    margin: auto 0.5em;
+  }
+  .userReviews > h3 {
+    font-size: 20px;
+    margin-left: 15%;
+  }
+  .multiStreamingUserRemarks > p {
+    font-size: 50px;
+  }
+  .leftAppos.multiStreamingLeftAppos {
+    bottom: -35%;
+    font-size: 50px;
+  }
+  .userImgPlaceholder {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .multiStreamingCards {
+    margin: 20px 5%;
+  }
+  .multiStreamingGetStartedText {
+    font-size: 10px;
+  }
+  .card1 {
+    height: 350px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .card4 .card-text {
+    font-size: 12px;
+  }
+  .card-container {
+    padding: 20px 10px;
+  }
+  .hostDiv > div {
+    margin-top: 20px;
+  }
+  .hostDiv {
+    margin-top: 20px;
+  }
+  .host,
+  .liveVideo,
+  .interViews {
+    margin: 2em 10px 0 10px;
+  }
+}

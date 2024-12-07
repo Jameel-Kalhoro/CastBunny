@@ -1,0 +1,570 @@
+.aboutWrap {
+  margin-top: 30px;
+}
+
+.aboutWrap .numbers {
+  padding: 30px 80px 50px 0;
+}
+
+.numbers .numberCols {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 50px;
+}
+
+.numbers .numberCols .numberTitle {
+  font-size: 18px;
+}
+
+.numbers .numberCols .verticalLine {
+  width: 1px;
+  height: 50px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+.lightTheme .numbers .numberCols .verticalLine {
+  background-color: #0b0011 !important;
+}
+
+.transform,
+.believeTitle,
+.provideTitle,
+.investorsHeading,
+.joinUsTitle,
+.collaboratorsHeading,
+.upcomingFeaturesHeading {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: center;
+}
+.transform .transformHeading {
+  font-size: 30px;
+}
+.transform > p {
+  font-size: 16px;
+  width: 90%;
+}
+.joinsUsDetailsWrap > div > p {
+  margin: 0 0 40px 0;
+  font-size: 15px;
+  width: 90%;
+}
+
+.transform .transformDesc > p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 80%;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.transformGrad {
+  background: linear-gradient(90deg, #0095ff 0.5%, #d0ff00 56%, #ff0000 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.believeDetails {
+  margin-top: 30px;
+  background: url("../assets/about-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+}
+
+.believeCard {
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+  color: white;
+  width: 220px;
+  padding: 15px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+.believeCardTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.believeCardDesc {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.believeCard.unity {
+  margin-top: 50px;
+}
+
+.believeCard.faith {
+  margin-top: 150px;
+}
+
+.believeCard.focus {
+  margin-top: 115px;
+}
+
+.believeCard.empathy {
+  margin-top: 180px;
+}
+
+.lightTheme .services-container {
+  background-color: white;
+}
+.services-container {
+  background-color: var(--bg-color);
+  padding: 40px;
+}
+
+.lightTheme .service-item {
+  border-right: 1px solid var(--bg-color);
+  border-bottom: 1px solid var(--bg-color);
+}
+
+.service-item {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+
+.service-item:nth-child(3),
+.service-item:nth-child(6) {
+  border-right: none;
+}
+
+.lightTheme .service-icon {
+  color: var(--bg-color);
+}
+.service-icon {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-weight: bold;
+  color: inherit;
+}
+
+.lightTheme .service-description {
+  color: #12041a;
+}
+.service-description {
+  color: #b0b0b0;
+  font-weight: 500;
+  width: 80%;
+}
+
+.service-item:nth-child(4),
+.service-item:nth-child(5),
+.service-item:nth-child(6) {
+  border-bottom: none;
+}
+
+.investors {
+}
+
+.investorImg > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.investorDetails {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.investorName {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.joinUsDetails,
+.imageGallery .col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinUsDetails .socialImg > img {
+  width: 60px;
+}
+
+.lightTheme .joinUsDetails:nth-child(1),
+.lightTheme .joinUsDetails:nth-child(2) {
+  border-right: 2px solid var(--bg-color);
+}
+.joinUsDetails:nth-child(1),
+.joinUsDetails:nth-child(2) {
+  border-right: 2px solid #b0b0b0;
+}
+
+.joinNowBtn > a > button {
+  font-size: calc(1rem + 0.4vw);
+  background-color: inherit;
+  color: white;
+  padding: 5px 15px;
+  border: 2px solid white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.socialName {
+  font-size: 35px;
+  margin-top: 25px;
+}
+
+.socialAudience {
+  font-size: calc(1.32rem + 0.6vw);
+}
+.lightTheme .joinNowBtn > a > button {
+  color: black;
+  border: 2px solid black;
+}
+
+.imageGallery .col1 > img,
+.imageGallery .col3 > img,
+.imageGallery .col5 > img,
+.imageGallery .col7 > img {
+  margin-bottom: 50px;
+  width: 120px;
+}
+
+.imageGallery .col6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageGallery .col4 > img,
+.imageGallery .col6 > img,
+.imageGallery .col2 > img {
+  margin-bottom: 50px;
+  height: 140px;
+}
+
+.imageGallery .col6 > img {
+  width: 190px;
+}
+
+.imageGallery .col2 {
+  margin-top: 120px;
+}
+
+.imageGallery .col3 {
+  margin-top: 45px;
+}
+
+.imageGallery .col4 {
+  margin-top: 80px;
+}
+
+.imageGallery .col5 {
+}
+
+.imageGallery .col6,
+.imageGallery .col7 {
+  margin-top: 40px;
+}
+
+.collaboratorDetails {
+  margin-top: 50px !important;
+  margin-bottom: 70px;
+}
+
+.collaboratorDetails .exampleVentures {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  background-color: transparent;
+  text-shadow: 0 0 60px rgba(255, 255, 255, 0.8),
+    0 0 80px rgba(255, 255, 255, 0.2), 0 0 120px rgba(255, 255, 255, 0.1);
+}
+
+.lightTheme .upcomingFeaturesDetails {
+  border-top: 1px solid var(--bg-color);
+  border-bottom: 1px solid var(--bg-color);
+}
+.upcomingFeaturesDetails {
+  padding: 40px 0px;
+  margin: 0 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.featureTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.featureDesc {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-align: left;
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .imageGallery.display {
+    display: none !important;
+  }
+  .transform .transformHeading {
+    font-size: 20px;
+  }
+  .transform .transformDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .transform .transformDesc > p {
+    font-size: 12px;
+    width: 80%;
+  }
+  .provideTitle {
+    font-size: 22px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .transform {
+    font-size: 30px;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+  .believeTitle,
+  .joinUsTitle,
+  .collaboratorsHeading,
+  .upcomingFeaturesHeading {
+    font-size: 22px;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .investorsHeading {
+    font-size: 22px;
+    padding: 10px 0 30px 0;
+    text-align: center;
+  }
+
+  .feature .featureTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .featureDesc {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    margin-bottom: 25px;
+  }
+
+  .collaboratorDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .exampleVentures {
+    width: 40% !important;
+    text-align: center;
+    font-size: 20px !important;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    background-color: transparent;
+    text-shadow: 0 0 60px rgba(255, 255, 255, 0.8),
+      0 0 80px rgba(255, 255, 255, 0.2), 0 0 120px rgba(255, 255, 255, 0.1);
+  }
+
+  .investorName {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  .joinUsDetails .socialImg > img {
+    width: 40px;
+  }
+
+  .joinNowBtn > a > button {
+    font-size: calc(0.75rem + 0.25vw);
+    margin-bottom: 10px;
+    padding: 3px 10px;
+  }
+  .socialName {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .socialAudience {
+    font-size: calc(0.75rem + 0.5vw);
+  }
+
+  .believe {
+    display: none;
+  }
+
+  .officeVertical {
+    margin-right: -40% !important;
+  }
+  .partnerVertical {
+    margin-right: 7%;
+  }
+  .collabVertical {
+    margin-right: -55% !important;
+  }
+
+  .services-container {
+    padding: 10px;
+  }
+
+  .service-item {
+    padding: 10px;
+  }
+
+  .service-item:nth-child(4) {
+    border-bottom: 1px solid white !important;
+  }
+  .service-item:nth-child(3) {
+    border-right: 1px solid white !important;
+  }
+
+  .service-item:nth-child(2),
+  .service-item:nth-child(4),
+  .service-item:nth-child(6) {
+    border-right: none;
+  }
+
+  .service-icon {
+    color: #fff;
+    width: 40px;
+    margin-bottom: 8px;
+  }
+
+  .service-description {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .service-item:nth-child(5) {
+    border-bottom: none !important;
+  }
+
+  .aboutWrap .numbers {
+    padding: 30px 30px 50px 30px;
+  }
+
+  .numbers .numberCols {
+    font-size: 30px;
+  }
+
+  .numbers .numberCols .numberTitle {
+    font-size: 15px;
+  }
+
+  .numbers .numberCols .verticalLine {
+    display: none;
+  }
+
+  .lightTheme .numbers .numberCols .verticalLine {
+    background-color: #0b0011 !important;
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 590px) {
+  .service-item {
+    border-right: none;
+  }
+  .investorCompany {
+    font-size: 12px;
+  }
+  .joinUsDetails:nth-child(1),
+  .joinUsDetails:nth-child(2) {
+    border: none;
+    margin-bottom: 20px;
+  }
+  .socialName {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+
+  .socialAudience {
+    font-size: calc(0.75rem + 0.5vw);
+  }
+
+  .numbers .numberCols {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .numbers .numberCols .numberTitle {
+    font-size: 16px;
+  }
+
+  .numbers .numberCols .verticalLine {
+    height: 35px;
+    margin-top: 10px;
+
+    margin-left: 5px;
+  }
+
+  .numbers .numberCols .verticalLine.lastLine {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .officeVertical {
+    margin-right: -20% !important;
+  }
+  .partnerVertical {
+    margin-right: 7%;
+  }
+  .collabVertical {
+    margin-right: -45% !important;
+  }
+  .service-item:nth-child(3) {
+    border-right: none !important;
+  }
+  .service-item:nth-child(5) {
+    border-bottom: 1px solid white !important;
+  }
+  .service-description {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .service-icon {
+    width: 30px;
+  }
+
+  .featureDesc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .partnerVertical {
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .partnerVertical {
+    margin-right: 1%;
+  }
+}

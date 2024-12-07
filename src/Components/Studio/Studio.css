@@ -1,0 +1,575 @@
+.studioWrap {
+  margin: 50px 20px;
+  text-align: left;
+}
+.studioTitle {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #9146ff, #ff00bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Ensure the element takes up space */
+}
+.powerUp {
+  margin-top: -10px;
+  font-size: 70px;
+  font-weight: 800;
+  background-image: linear-gradient(90deg, #07d215, #02fc87);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.your {
+  padding-left: 10px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.streaming {
+  margin-top: -25px;
+  font-size: 70px;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #ff00bf 0%,
+    #59ff00 31%,
+    #0095ff 57.5%,
+    #5cabe4
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.studioLeft > p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.studioLeftBtn {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.darkTheme .studioLeftBtn {
+  color: white;
+  border: 2px solid white;
+}
+.lightTheme .studioLeftBtn {
+  color: var(--bg-color);
+  border: 2px solid var(--bg-color);
+}
+
+.studioRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studioRightPlaceholder {
+  width: 90%;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.studioColabs {
+  margin-top: 5em;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+.colabDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightTheme .colabDetail > div {
+  background-color: var(--bg-color);
+}
+.darkTheme .colabDetail > div {
+  background-color: white;
+}
+.colabDetail > div {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.audience {
+  margin-top: 6em;
+}
+
+.audienceTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 2em;
+}
+
+.giftsImgPlaceholder {
+  width: 60%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.audienceCol > p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-image: linear-gradient(90deg, #9146ff, #ff00bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.highLightMessagesImgPlaceholder {
+  width: 80%;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.audience > .audienceImg > img {
+  width: 90%;
+  margin-bottom: 3em;
+}
+.audience > .audienceText {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.host,
+.liveVideo,
+.interViews {
+  margin: 6em 30px 0 30px;
+}
+.hostDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+}
+.hostDiv > div {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+}
+
+.hostDiv > p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.lightTheme .hostRightDiv {
+  background-color: var(--bg-color);
+}
+
+.darkTheme .hostRightDiv {
+  background-color: white;
+}
+.hostRightDiv {
+  position: relative;
+  border-radius: 20px;
+  width: 90%;
+  height: 250px;
+}
+
+.rightHead {
+  position: absolute;
+  top: -40px;
+  right: -30px;
+  width: 25%;
+}
+
+.leftHead {
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  width: 25%;
+}
+
+.interViewsHeading {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.interViewsHeading > span {
+  background-image: linear-gradient(90deg, #9146ff, #ff00bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.interViewsDetails {
+  margin-top: 4em;
+}
+
+.darkTheme .interViewCard {
+  box-shadow: 0.5px 0.5px 10px 0.5px #afabb1;
+}
+.lightTheme .interViewCard {
+  box-shadow: 1px 1px 10px 0px var(--bg-color);
+  color: white;
+}
+
+.interViewCard {
+  margin: 40px;
+  background: linear-gradient(90deg, #1e0b25 15.2%, #2f1438 97.92%);
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 100% !important; */
+}
+
+.interViewCardCircle {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* margin-left: 50%; */
+
+  width: 70px;
+  background-color: white;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.interViewCardHeading {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.interViewCard > p {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.userInfo {
+  position: relative;
+}
+
+.someUser {
+  margin-top: 8em;
+}
+.userName {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.userDesignation {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.userRemarks > p {
+  display: inline;
+  vertical-align: top;
+  font-size: 80px;
+  font-weight: 700;
+  margin-right: 1%;
+  margin-bottom: 6%;
+}
+.userRemarks {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.leftAppos {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  font-size: 80px;
+  font-weight: 700;
+}
+.userImgPlaceholder {
+  width: 60%;
+  height: 250px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+.userCompany {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+.growBusiness {
+  margin-top: 6em;
+}
+.growBusiness > p {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.lightTheme .growBtn {
+  color: var(--bg-color);
+  border: 2px solid var(--bg-color);
+}
+.darkTheme .growBtn {
+  color: white;
+  border: 2px solid white;
+}
+.growBusiness .growBtn {
+  background-color: transparent;
+  font-size: 15px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  transition: scale 0.1s ease-in-out;
+}
+
+.growBusiness .growBtn:hover {
+  scale: 1.05;
+}
+
+@media screen and (max-width: 1260px) {
+  .powerUp {
+    font-size: 60px;
+  }
+  .your {
+    font-size: 40px;
+  }
+  .streaming {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .powerUp {
+    font-size: 52px;
+  }
+  .your {
+    font-size: 35px;
+  }
+  .streaming {
+    font-size: 52px;
+  }
+  .colabDetail > div {
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .powerUp {
+    font-size: 45px;
+  }
+  .your {
+    font-size: 30px;
+  }
+  .streaming {
+    font-size: 45px;
+  }
+  .colabDetail > div {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  .colabDetail {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .studioWrap {
+    margin: 30px 10px;
+  }
+  .powerUp {
+    font-size: 40px;
+  }
+  .your {
+    font-size: 30px;
+  }
+  .streaming {
+    font-size: 40px;
+  }
+  .colabDetail > div {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  .colabDetail {
+    font-size: 20px;
+  }
+  .audience .audienceText {
+    font-size: 20px;
+  }
+  .host,
+  .liveVideo,
+  .interViews {
+    margin: 5em 30px 0 30px;
+  }
+  .rightHead {
+    top: -20px;
+    right: -20px;
+  }
+  .leftHead {
+    top: -20px;
+    left: -20px;
+  }
+  .interViewCard {
+    padding: 50px 60px;
+  }
+  .leftAppos {
+    bottom: -20%;
+    right: 10%;
+    font-size: 60px;
+  }
+
+  .userRemarks {
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  .userRemarks > p {
+    font-size: 60px;
+  }
+  .userName {
+    font-size: 35px;
+  }
+  .userDesignation {
+    font-size: 20px;
+  }
+  .userCompany {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .studioLeft {
+    margin-bottom: 30px;
+  }
+  .audienceTitle {
+    font-size: 22px;
+  }
+  .audience .audienceText {
+    font-size: 15px;
+  }
+  .hostDiv > div {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hostDiv > p {
+    font-size: 15px;
+  }
+  .rightHead {
+    top: -10px;
+    right: -10px;
+  }
+  .leftHead {
+    top: -10px;
+    left: -10px;
+  }
+
+  .interViewsDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .interViewCard {
+    margin-left: 20%;
+    width: 300px !important;
+  }
+  .userImg > img {
+    width: 50%;
+  }
+  .growBusiness > p {
+    font-size: 15px;
+  }
+  .growBusiness .growBtn {
+    font-size: 12px;
+    padding: 3px 15px;
+  }
+  .colabDetail {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hostDiv > div {
+    margin-top: 20px;
+  }
+  .hostDiv > p {
+    font-size: 15px;
+  }
+  .interViewCard {
+    margin-left: 5%;
+  }
+  .userImg > img {
+    width: 50%;
+  }
+  .growBusiness > p {
+    font-size: 15px;
+  }
+  .growBusiness .growBtn {
+    font-size: 12px;
+    padding: 3px 15px;
+  }
+  .colabDetail {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .audienceTitle {
+    font-size: 18px;
+  }
+
+  .hostDiv > div {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .hostDiv > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .interViewsHeading {
+    font-size: 20px;
+  }
+  .interViewCard {
+    margin: 0 0 30px 0;
+  }
+  .growBusiness > p {
+    font-size: 12px;
+  }
+  .growBusiness .growBtn {
+    font-size: 12px;
+  }
+}

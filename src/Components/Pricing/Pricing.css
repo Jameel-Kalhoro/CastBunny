@@ -1,0 +1,976 @@
+.pricingWrap {
+  /* background-color: #290d29; */
+}
+.pricingHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pricingHeader .today {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.pricingHeader .fastGrow {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+}
+
+.pricingHeader .pricingDesc {
+  font-size: 14px;
+  margin-top: 5px;
+  text-wrap: wrap;
+}
+
+.pricingCardDivs {
+  margin: 40px 0;
+}
+.standardDiv,
+.businessDiv {
+  position: relative; /* Ensures ::before only covers this section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: 0 0px; */
+  padding: 20px 30px 20px 10px;
+  z-index: 1; /* Places content above the ::before pseudo-element */
+}
+
+.standardDiv::before,
+.businessDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../assets/pricingBg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  filter: blur(30px);
+}
+.lightTheme .standardDiv::before,
+.lightTheme .businessDiv::before {
+  filter: blur(20px);
+}
+.pricingCards {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricingCards > p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pricingCard {
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 35px;
+  background: rgba(179, 170, 170, 0.15);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  padding: 0 20px;
+  /* transition: transform 0.1s ease; */
+}
+.pricingHeading {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricingHeading > span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.pricingCard > p {
+  font-size: 12px;
+}
+
+.pricingCardDetails {
+  margin-top: 30px;
+  line-height: 15px;
+}
+
+.pricingCardDetails > p {
+  font-size: 13px;
+  text-align: left;
+  padding-left: 20px;
+  letter-spacing: 0.5px;
+  /* font-weight: 500 !important; */
+}
+
+.pricingCardDetails p::before {
+  content: "✔";
+  position: absolute;
+  left: 20px;
+  color: inherit;
+  font-size: 14px;
+}
+
+.pricingCard {
+  height: 350px;
+}
+.darkTheme .pricingCard.standard {
+  border: 2px solid white; /* Highlight the Business card */
+}
+.lightTheme .pricingCard.standard {
+  border: 2px solid var(--bg-color); /* Highlight the Business card */
+}
+.darkTheme .pricingCard.business {
+  border: 2px solid white; /* Highlight the Business card */
+}
+
+.lightTheme .pricingCard.business {
+  border: 2px solid var(--bg-color); /* Highlight the Business card */
+}
+.planBtn {
+  position: relative;
+}
+.planBtn > a > button {
+  text-decoration: none;
+  position: absolute;
+  bottom: 15px;
+  right: -90px;
+  border: none;
+  background: rgba(179, 170, 170, 0.15);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: 180px;
+}
+
+.lightTheme .planBtn > a > button {
+  color: var(--bg-color);
+}
+.darkTheme .planBtn > a > button {
+  color: white;
+}
+
+.frequentlyAsk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  font-family: "raleway", Arial;
+}
+.planIncludeDetails {
+  position: relative;
+}
+.planIncludeDetails::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../assets/pricingBg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  filter: blur(80px);
+}
+.planIncludeHeading,
+.frequentlyAskHeading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.planCard {
+  margin-top: 50px;
+  background: rgba(160, 143, 143, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 0px 0px 15px 0px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planCardHeading {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.planCardHeading > span {
+  padding: 0 5px;
+  font-size: 45px;
+}
+
+.planCardDetails {
+  margin-top: 5px;
+  font-size: 14px;
+  width: 80%;
+}
+
+.darkTheme .accordion {
+  width: 800px;
+  margin: 40px 150px !important;
+  --bs-accordion-active-color: inherit !important ;
+  --bs-accordion-active-bg: inherit !important;
+  --bs-accordion-bg: inherit !important;
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-border-width: 0px !important;
+}
+.lightTheme .accordion {
+  width: 800px;
+  margin: 40px 150px !important;
+  --bs-accordion-active-color: inherit !important ;
+  --bs-accordion-active-bg: transparent !important;
+  --bs-accordion-bg: inherit !important;
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-border-width: 0px !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.darkTheme .accordion-item {
+  color: inherit !important;
+  border: none !important;
+  border-bottom: 1px solid white !important;
+}
+
+.lightTheme .accordion-item {
+  color: inherit !important;
+  border: none !important;
+  border-bottom: 1px solid var(--bg-color) !important;
+}
+
+.darkTheme .accordion-body {
+  /* width: 80%; */
+  background-color: var(--bg-color);
+}
+
+.lightTheme .accordion-body {
+  /* background-color: white; */
+}
+
+.darkTheme .accordion-header {
+  border-bottom: 1px solid white !important;
+  background-color: var(--bg-color) !important;
+}
+
+.lightTheme .accordion-header {
+  border-bottom: 1px solid var(--bg-color) !important;
+}
+
+.darkTheme .accordion-button {
+  color: inherit !important;
+  font-weight: 500 !important;
+  background-color: transparent;
+  font-size: 1.1rem !important;
+  padding: 10px 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s !important;
+}
+.lightTheme .accordion-button {
+  font-weight: 500 !important;
+  background-color: transparent;
+  font-size: 1.1rem !important;
+  padding: 10px 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s !important;
+}
+.darkTheme .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-body {
+  font-size: 15px;
+}
+
+.comparisonHeading {
+  font-weight: 600;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(94.93deg, #9146ff 2.2%, #ff00bf 97.92%);
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(94.93deg, #ff00bf 2.2%, #9146ff 97.92%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.featuresTable {
+  padding: 20px 60px;
+  background-color: transparent; /* Make the entire table wrapper transparent */
+  color: inherit; /* Inherit text color */
+}
+
+.featuresTable h3 {
+  margin-bottom: 20px;
+  text-align: left;
+  color: inherit; /* Inherit color from parent */
+}
+
+.customTable {
+  /* margin: 0 30px; */
+  margin-top: 50px;
+  background-color: transparent; /* Make table background transparent */
+  border-color: rgba(255, 255, 255, 0.1); /* Light border for table cells */
+  color: inherit; /* Inherit text color */
+}
+.lightTheme .customTable thead th {
+  /* border-right: 1px solid rgba(44, 44, 44, 0.9); Light borders for rows */
+  border-left: none;
+  border-top: 1px solid rgba(44, 44, 44, 0.9);
+  border-bottom: 1px solid rgba(44, 44, 44, 0.9);
+}
+.lightTheme .borderRight {
+  border-right: 1px solid rgba(44, 44, 44, 0.9) !important;
+}
+.borderRight {
+  border-right: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+.customTable thead th {
+  background-color: transparent; /* Transparent header background */
+  color: inherit; /* Inherit header text color */
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light borders for rows */
+  text-align: center;
+}
+.lightTheme .customTable tbody tr td {
+  border-right: 1px solid rgba(44, 44, 44, 0.9); /* Light borders for rows */
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.9);
+}
+.customTable tbody tr td {
+  border-right: 2px solid rgba(255, 255, 255, 0.1); /* Light borders for rows */
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light borders for rows */
+  background-color: transparent; /* Transparent background for rows */
+  color: inherit; /* Inherit text color */
+  font-size: 15px;
+}
+
+.customTable tbody tr td.text-center {
+  text-align: center; /* Center-align checkmarks or text */
+}
+
+.customTable tbody tr td {
+  vertical-align: middle; /* Align text or icons in the middle */
+}
+
+.multiHeading {
+  text-align: left !important;
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(94.93deg, #9146ff 2.2%, #ff00bf 97.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.darkTheme .customTable tbody tr td .tick-icon {
+  color: white; /* Make the tick icon white */
+  font-size: 1.2rem; /* Adjust the size of the tick if needed */
+}
+
+.lightTheme .customTable tbody tr td .tick-icon {
+  color: black; /* Make the tick icon white */
+  font-size: 1.2rem; /* Adjust the size of the tick if needed */
+}
+/* Container for the toggle switch */
+.toggle-container {
+  display: flex;
+  position: relative;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: var(--bg-color);
+  overflow: hidden;
+}
+.lightTheme .toggle-container {
+  border: 1px solid var(--bg-color);
+}
+
+/* Slider for the toggle effect */
+.pricingSlider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+}
+
+.pricingSlider.standard {
+  transform: translateX(0%);
+}
+
+.pricingSlider.business {
+  transform: translateX(100%);
+}
+
+/* Labels inside the toggle */
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Active label styling */
+.label {
+  z-index: 2;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.label.active {
+  color: #000;
+}
+
+.pricingCTA {
+  /* width: 70%; */
+  margin-top: 1em;
+  padding: 15px 25px !important;
+}
+.pricingCTA > .reachMoreText {
+  font-size: 25px;
+}
+.pricingCTAText {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.pricingCTA > .reachMoreBtnWrap {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  .pricingCards > p {
+    font-size: 18px !important;
+  }
+  .pricingCTA {
+    margin-top: 4em;
+  }
+}
+@media screen and (max-width: 890px) {
+  .pricingCTA > .reachMoreText {
+    font-size: 26px;
+  }
+  .pricingCard {
+    width: 220px;
+    height: 320px;
+  }
+  .pricingHeading {
+    font-size: 40px !important;
+  }
+  .pricingCard > p {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .pricingCardDetails > p {
+    font-size: 12px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pricingDetails {
+    /* display: none; */
+    padding: 20px 0;
+  }
+
+  .pricingCards > p {
+    font-size: 22px;
+    font-weight: 600;
+    width: 75%;
+  }
+  .pricingHeading {
+    font-size: 50px;
+  }
+
+  .planBtn > button {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    border: none;
+    background: rgba(179, 170, 170, 0.15);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .lightTheme .planBtn > button {
+    color: var(--bg-color);
+  }
+  .darkTheme .planBtn > button {
+    color: white;
+  }
+
+  .frequentlyAsk {
+    margin: 30px 0;
+  }
+  .planCard {
+    margin-top: 50px;
+    background: rgba(160, 143, 143, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .planCardHeading {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+  }
+  .planCardHeading > span {
+    padding: 0 5px;
+    font-size: 45px;
+  }
+
+  .planCardDetails {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .darkTheme .accordion {
+    width: 800px;
+    margin: 40px 50px !important;
+  }
+  .lightTheme .accordion {
+    width: 800px;
+    margin: 40px 50px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricingCTA {
+    margin: 2em;
+    padding: 20px !important;
+  }
+  .pricingTable {
+    display: none;
+  }
+  .container {
+    max-width: 90% !important;
+  }
+  .pricingHeading {
+    font-size: 50px;
+  }
+
+  .pricingDetails {
+    /* display: none; */
+    padding: 20px 0;
+  }
+
+  .pricingCards > p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 75%;
+  }
+  .pricingCards.professional3 {
+    width: 80%;
+  }
+  .pricingCards.business1 {
+    width: 80%;
+  }
+  .pricingCards.business2 {
+    width: 60%;
+  }
+  .pricingHeading {
+    font-size: 40px;
+  }
+  .planCard {
+    padding: 5px;
+  }
+  .planIncludeHeading {
+    font-size: 25px;
+  }
+  .planCardHeading {
+    font-size: 18px;
+  }
+  .planCardHeading > span {
+    padding: 0 5px;
+    font-size: 30px;
+  }
+
+  .planCardDetails {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .planBtn > button {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    border: none;
+    background: rgba(179, 170, 170, 0.15);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .frequentlyAsk {
+    margin: 30px 0;
+  }
+  .planCard {
+    margin-top: 30px;
+    padding: 5px;
+  }
+
+  .planCardHeading {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+  }
+  .planCardHeading > span {
+    font-size: 35px;
+  }
+
+  .planCardDetails {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+
+  .darkTheme .accordion {
+    width: 80%;
+    margin: 40px 80px !important;
+  }
+  .lightTheme .accordion {
+    width: 80%;
+    margin: 40px 80px !important;
+  }
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+  }
+  .lightTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+  }
+  .accordion-body {
+    font-size: 15px;
+  }
+
+  .planIncludeHeading {
+    margin-top: 10px;
+  }
+  .frequentlyAskHeading {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .darkTheme .accordion {
+    width: 650px;
+    margin: 40px 80px !important;
+  }
+  .lightTheme .accordion {
+    width: 650px;
+    margin: 40px 80px !important;
+  }
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.95rem !important;
+  }
+  .lightTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.95rem !important;
+  }
+  .accordion-body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .pricingHeader {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .pricingHeader .fastGrow {
+    font-size: 22px;
+  }
+
+  .pricingHeader .pricingDesc {
+    font-size: 12px;
+    margin-top: 5px;
+    text-wrap: wrap;
+  }
+  .pricingHeading {
+    font-size: 50px;
+  }
+
+  .pricingDetails {
+    /* display: none; */
+    padding: 0 0 20px 0;
+  }
+
+  .pricingCards > p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 75%;
+  }
+  .pricingHeading {
+    font-size: 40px;
+  }
+
+  .planBtn > button {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    border: none;
+    background: rgba(179, 170, 170, 0.15);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .frequentlyAsk {
+    margin: 30px 0;
+  }
+  .planCard {
+    margin-top: 30px;
+  }
+
+  .planCardHeading {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+  }
+  .planCardHeading > span {
+    font-size: 30px;
+  }
+
+  .planCardDetails {
+    margin-top: 3px;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+  }
+
+  .darkTheme .accordion {
+    width: 80%;
+    margin: 40px 80px !important;
+  }
+  .lightTheme .accordion {
+    width: 80%;
+    margin: 40px 80px !important;
+  }
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.8rem !important;
+  }
+  .lightTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.8rem !important;
+  }
+
+  .planIncludeHeading {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+  }
+  .frequentlyAskHeading {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  .accordion-body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .accordion-body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pricingCTA .reachMoreText {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 60% !important;
+  }
+  .planCard {
+    padding: 0 0px 10px 0px;
+  }
+
+  .pricingCards > p {
+    width: 60%;
+  }
+  .pricingCards.business1,
+  .pricingCards.business2,
+  .pricingCards.professional3 {
+    width: 100%;
+  }
+  .planBtn > button {
+    bottom: 50px;
+  }
+  .accordion-body {
+    font-size: 10px;
+  }
+  .frequentlyAskHeading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .darkTheme .accordion {
+    width: 350px;
+    margin: 20px 30px !important;
+  }
+  .lightTheme .accordion {
+    width: 350px;
+    margin: 20px 30px !important;
+  }
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.7rem !important;
+  }
+  .lightTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.7rem !important;
+  }
+  .pricingCardDetails > p {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .pricingHeader .fastGrow {
+    font-size: 15px;
+  }
+  .pricingHeader .today {
+    font-size: 12px;
+  }
+  .pricingHeader .pricingDesc {
+    font-size: 10px;
+    width: 85%;
+    margin-bottom: 0;
+    letter-spacing: 0.25px;
+  }
+  .lightTheme .accordion,
+  .darkTheme .accordion {
+    width: 300px;
+    margin: 20px !important;
+  }
+  .lightTheme .accordion-button,
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (max-width: 335px) {
+  .pricingCTA {
+    margin: 1em;
+    padding: 15px !important;
+  }
+  .lightTheme .accordion,
+  .darkTheme .accordion {
+    width: 260px;
+    margin: 10px !important;
+  }
+  .lightTheme .accordion-button,
+  .darkTheme .accordion-button {
+    font-weight: 400 !important;
+    font-size: 0.65rem !important;
+  }
+  .accordion-body {
+    font-size: 8px;
+  }
+  .frequentlyAskHeading {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .pricingCard {
+    /* width: 250px; */
+  }
+}

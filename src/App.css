@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --primary-color: #fff;
+  --bg-color: #0b0011;
+  --text-color-dark: #ffffff;
+  --text-color-light: #0b0011;
+}
+
+body,
+html {
+  font-family: "Raleway", Arial !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.darkTheme {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  height: 100%;
+}
+
+.lightTheme {
+  background-color: white;
+  color: var(--bg-color);
+}
+
+.darkTheme body,
+.darkTheme html {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.lightTheme body,
+.lightTheme html {
+  background-color: white !important;
+  color: var(--bg-color);
+}
+
+.darkTheme .HeaderWrap,
+.darkTheme .footerWrap {
+  color: var(--text-color-dark);
+}
+
+.lightTheme .HeaderWrap,
+.lightTheme .footerWrap {
+  color: var(--text-color-light);
+}
+
+.HeaderWrap a,
+.footerWrap a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.HeaderWrap a:hover,
+.footerWrap a:hover {
+  text-decoration: underline;
+}

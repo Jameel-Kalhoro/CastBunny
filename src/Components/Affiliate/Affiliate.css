@@ -1,0 +1,215 @@
+.affiliateWrap {
+  margin: 50px 0;
+}
+
+.affiliateHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.affiliateHeading > div {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.affiliateHeading > div > .stream {
+  background-image: linear-gradient(
+    90deg,
+    #f510b4,
+    #42fd21
+  ); /* Adjust colors and angle as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.affiliateHeading > div > .earn {
+  color: #42fd21;
+}
+.affiliateHeading > .affiliateDetails {
+  text-align: center;
+  width: 80%;
+}
+.affiliateDetails > div {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.affiliateDetails > p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.affiliateDetails > button {
+  background-color: transparent;
+  color: inherit;
+  font-size: 18px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.darkTheme .affiliateDetails > button {
+  border: 2px solid white;
+}
+.lightTheme .affiliateDetails > button {
+  border: 2px solid var(--bg-color);
+}
+
+.affiliateProgram {
+  margin-top: 40px;
+}
+.affiliateProgramTitle {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.affiliateProgramDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.programDiv > div {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.programDivImgPlaceholder {
+  background-color: #ddd;
+  width: 50%;
+  height: 150px;
+  border-radius: 20px;
+}
+.programDiv > p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.startEarning {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startEarning > p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.startEarning > button {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 20px 15px 20px;
+  padding: 5px 20px;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  border-radius: 5px;
+}
+.darkTheme .startEarning > button {
+  border: 2px solid white;
+}
+.lightTheme .startEarning > button {
+  border: 2px solid var(--bg-color);
+}
+
+@media screen and (max-width: 671px) {
+  .affiliateDetails > div {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .affiliateDetails > p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .affiliateDetails > button {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+
+  .affiliateProgram {
+    margin-top: 40px;
+  }
+  .affiliateProgramTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .programDiv > div {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .programDiv > img {
+  }
+  .programDiv > p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .affiliateHeading > div {
+    font-size: 40px;
+  }
+
+  .startEarning {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .startEarning > p {
+    font-size: 20px;
+  }
+  .startEarning > button {
+    font-size: 15px;
+    margin: 0 0x 15px 20px;
+    padding: 5px 15px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .affiliateHeading > div {
+    font-size: 30px;
+  }
+  .affiliateDetails > div {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .affiliateDetails > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .affiliateDetails > button {
+    font-size: 12px;
+    padding: 3px 15px;
+  }
+
+  .affiliateProgram {
+    margin-top: 30px;
+  }
+  .affiliateProgramTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .programDiv > div {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .programDiv > img {
+    width: 50%;
+  }
+
+  .startEarning {
+    margin-top: 20px;
+  }
+  .startEarning > p {
+    font-size: 18px;
+  }
+  .startEarning > button {
+    font-size: 12px;
+    margin: 0;
+    padding: 3px 12px;
+    border: none;
+  }
+}

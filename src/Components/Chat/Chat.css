@@ -1,0 +1,421 @@
+.chatWrap {
+  margin-top: 10px;
+}
+.promotionalVideo {
+  background-color: rgb(35, 25, 41);
+}
+.promotionalVideoWatermark {
+  padding: 20px 40px;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.promotionalVideoMainDiv {
+  padding: 50px 0;
+}
+.promotionalVideoMainDiv > div {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.promotionalVideoMainDiv > p {
+  width: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.promotionalVideoMainDiv > button {
+  background-color: transparent;
+  color: inherit;
+  padding: 3px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.lightTheme .promotionalVideoMainDiv > button {
+  border: 2px solid var(--bg-color);
+}
+.darkTheme .promotionalVideoMainDiv > button {
+  border: 2px solid white;
+}
+
+.chatJumpstart {
+  margin-top: 30px;
+  background: url("../assets/chat-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chatEngage > p,
+.chatJumpstart > div {
+  margin-top: 22px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.chatEngage > p {
+  width: 80%;
+}
+.chatJumpstart > p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  width: 70%;
+  text-align: center;
+}
+
+.chatEngage > button,
+.chatJumpstart > button {
+  margin: 20px 0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: inherit;
+}
+.lightTheme .chatEngage > button,
+.lightTheme .chatJumpstart > button {
+  border: 2px solid var(--bg-color);
+}
+.darkTheme .chatEngage > button,
+.darkTheme .chatJumpstart > button {
+  border: 2px solid white;
+}
+
+.chatPromotion {
+  margin: 50px auto auto auto;
+  width: 100%;
+}
+.chatPromotionHeading {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.swiperWrap {
+  margin: auto 2%;
+}
+.chatPromotionCardWrap {
+  background: linear-gradient(
+    94.93deg,
+    rgba(145, 70, 255, 0.1) 15.2%,
+    rgba(255, 0, 191, 0.1) 97.92%
+  );
+  margin: 3% 6%;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px !important;
+  height: 400px !important;
+  /* max-width: 50% !important; */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+.chatFeatureLogo {
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px; /* Space between logo and title */
+}
+.chatPromotionFeature {
+  font-size: 30px;
+  margin: 15px 0;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.chatPromotionFeatureDetails {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+.swiper-container {
+  width: 100%;
+  /* height: 300px; Adjust height as needed */
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 0px) !important;
+  padding: 22px;
+  border-radius: 40px;
+  text-align: center;
+}
+.lightTheme .swiper-button-next,
+.lightTheme .swiper-button-prev,
+.lightTheme .swiper-rtl .swiper-button-prev {
+  background-color: var(--bg-color);
+}
+
+.darkTheme .swiper-button-next,
+.darkTheme .swiper-button-prev,
+.darkTheme .swiper-rtl .swiper-button-prev {
+  background-color: white;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 25px !important;
+  font-weight: 900 !important;
+  /* color: black; */
+}
+.darkTheme .swiper-button-prev:after,
+.darkTheme .swiper-button-next:after {
+  color: var(--bg-color);
+}
+
+.lightTheme .swiper-button-prev:after,
+.lightTheme .swiper-button-next:after {
+  color: white;
+}
+.chatEngage {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .chatWrap {
+    margin-top: 0px;
+  }
+  .promotionalVideoWatermark {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .promotionalVideoMainDiv {
+    padding: 30px 0;
+  }
+  .promotionalVideoMainDiv > div {
+    font-size: 30px;
+  }
+
+  .promotionalVideoMainDiv > p {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .chatJumpstart > div {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  .chatEngage > p {
+    width: 70%;
+  }
+  .chatJumpstart > p {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 65%;
+  }
+
+  .chatEngage > button,
+  .chatJumpstart > button {
+    margin: 0px 0;
+    padding: 2px 15px;
+    font-size: 15px;
+  }
+
+  .chatPromotion {
+    margin: 30px auto auto auto;
+  }
+  .chatPromotionHeading {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .chatPromotionCardWrap {
+    margin: 10px 32px;
+    padding: 30px 10px;
+  }
+  .chatFeatureLogo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+  .chatPromotionFeature {
+    font-size: 20px;
+  }
+
+  .chatPromotionFeatureDetails {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -1px) !important;
+    padding: 15px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+  }
+
+  .swiper-button-prev {
+    left: 0px !important;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: black;
+  }
+  .chatEngage {
+    margin-top: 40px;
+  }
+
+  .chatEngage > p {
+    font-size: 20px;
+  }
+  .chatEngage > button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .promotionalVideoWatermark {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  .promotionalVideoMainDiv {
+    padding: 20px 0;
+  }
+  .promotionalVideoMainDiv > div {
+    font-size: 20px;
+  }
+
+  .promotionalVideoMainDiv > p {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .chatJumpstart > div {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .chatEngage > p {
+    width: 70%;
+  }
+  .chatJumpstart > p {
+    margin-top: 10px;
+    font-size: 11px;
+    width: 80%;
+  }
+
+  .chatEngage > button,
+  .chatJumpstart > button {
+    margin: 0px 0;
+    padding: 2px 15px;
+    font-size: 12px;
+  }
+
+  .chatPromotion {
+    margin: 20px auto auto auto;
+  }
+  .chatPromotionHeading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .chatPromotionCardWrap {
+    width: 25% !important;
+    margin: 10px 25px;
+    padding: 30px 10px;
+  }
+  .chatFeatureLogo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+  }
+  .chatPromotionFeature {
+    font-size: 15px;
+  }
+
+  .chatPromotionFeatureDetails {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -1px) !important;
+    padding: 8px !important;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .swiper-button-prev {
+    left: 0px !important;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 8px !important;
+    font-weight: 900 !important;
+    color: black;
+  }
+  .chatEngage {
+    margin-top: 20px;
+  }
+
+  .chatEngage > p {
+    font-size: 15px;
+  }
+  .chatEngage > button {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .chatPromotion {
+    margin: 20px auto auto auto;
+  }
+  .chatPromotionHeading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .chatPromotionCardWrap {
+    margin: 10px 18px;
+    padding: 15px 10px;
+    width: 25% !important;
+    /* max-width: 400px !important; */
+  }
+  .chatFeatureLogo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+  }
+  .chatPromotionFeature {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .chatPromotionFeatureDetails {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -1px) !important;
+    padding: 8px !important;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .swiper-button-prev {
+    left: 0px !important;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 8px !important;
+    font-weight: 900 !important;
+    color: black;
+  }
+}
