@@ -53,9 +53,9 @@ const AboutUs = () => {
           </Row>
         </Container>
       </div> */}
-      <h1 className="text-center fw-bold mt-4">About Us</h1>
-
+      
       <div className="transform">
+      <h1 className="text-center fw-bold mt-4">About Us</h1>
         <p>
           At CastBunny, we are on a mission to revolutionize the live streaming
           landscape. Based in Toronto, our startup is built on the vision of
@@ -75,6 +75,8 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+
+      <div className="sqr"></div>
 
       {/* <div className="numbers">
         <Container>
@@ -182,7 +184,7 @@ const AboutUs = () => {
               xs={12}
               sm={6}
               md={4}
-              className="service-item d-flex flex-column align-items-center justify-content-center"
+              className="service-item d-flex flex-column align-items-center justify-content-center hovcha"
             >
               <FaHeadphones className="service-icon" size={50} />
               <h5 className="service-title">Multi-Platform Streaming</h5>
@@ -196,7 +198,7 @@ const AboutUs = () => {
               xs={12}
               sm={6}
               md={4}
-              className="service-item d-flex flex-column align-items-center justify-content-center"
+              className="service-item d-flex flex-column align-items-center justify-content-center hovcha"
             >
               <FaCloud className="service-icon" size={50} />
               <h5 className="service-title">Proprietary P2P Technology</h5>
@@ -210,7 +212,7 @@ const AboutUs = () => {
               xs={12}
               sm={6}
               md={4}
-              className="service-item d-flex flex-column align-items-center justify-content-center"
+              className="service-item d-flex flex-column align-items-center justify-content-center hovcha"
             >
               <FaRocket className="service-icon" size={50} />
               <h5 className="service-title">User-Friendly Interface</h5>
@@ -236,7 +238,7 @@ const AboutUs = () => {
               xs={12}
               sm={6}
               md={4}
-              className="service-item d-flex flex-column align-items-center justify-content-center"
+              className="service-item d-flex flex-column align-items-center justify-content-center hovcha"
             >
               <FaShieldAlt className="service-icon" size={50} />
               <h5 className="service-title">In-House Development</h5>
@@ -268,7 +270,7 @@ const AboutUs = () => {
           OUR UPCOMING FEATURES
         </div>
 
-        <div className="upcomingFeaturesDetails">
+        <div className="upcomingFeaturesDetails hovcha">
           <Container>
             <Row>
               <Col xs={12} md={4} className="feature">
@@ -280,7 +282,7 @@ const AboutUs = () => {
                   convenience and Create 24/7 live streams with VOD library{" "}
                 </div>
               </Col>
-              <Col xs={12} md={4} className="feature">
+              <Col xs={12} md={4} className="feature hovcha">
                 <div className="featureTitle">ChatBox & Donations</div>
                 <div className="featureDesc">
                   Engage with your audience in real-time through interactive
@@ -288,7 +290,7 @@ const AboutUs = () => {
                   donation options.
                 </div>
               </Col>{" "}
-              <Col xs={12} md={4} className="feature">
+              <Col xs={12} md={4} className="feature hovcha">
                 <div className="featureTitle">OTT Set-top Box:</div>
                 <div className="featureDesc">
                   Our Android OTT set-top box with P2P technology offers an
@@ -411,7 +413,7 @@ const AboutUs = () => {
                     href="https://www.youtube.com/@CastBunnyHQ"
                     target="_blank"
                   >
-                    <button className="">Join Now</button>
+                    <button className="buttonHover">Join Now</button>
                   </a>
                 </div>
               </Col>
@@ -424,7 +426,7 @@ const AboutUs = () => {
                 <div className="joinNowBtn mt-3  ">
                   <a href="https://discord.gg/cXpReteP" target="_blank">
                     {" "}
-                    <button className="">Join Now</button>
+                    <button className="buttonHover">Join Now</button>
                   </a>
                 </div>
               </Col>
@@ -436,7 +438,7 @@ const AboutUs = () => {
                 <div className="socialAudience">8M+ Likes</div>
                 <div className="joinNowBtn mt-3 ">
                   <a href="https://facebook.com/CastBunnyHQ" target="_blank">
-                    <button className="">Join Now</button>
+                    <button className="buttonHover">Join Now</button>
                   </a>
                 </div>
               </Col>
@@ -453,7 +455,7 @@ const AboutUs = () => {
           </h4>
           <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
             <Link to={"/signUp"}>
-              <button className="reachMoreBtn">Sign up now</button>
+              <button className="reachMoreBtn purpleHover">Sign up now</button>
             </Link>
           </div>
         </div>

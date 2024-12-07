@@ -6,6 +6,39 @@
   padding: 30px 80px 50px 0;
 }
 
+.sqr {
+  height: 400px;
+  width: 40%; /* Set width equal to height for a perfect circle */
+  border: 5px solid lightblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  align-self: center;
+  margin-top: -300px;
+  margin-left: 200px;
+  background-color: rgba(103, 102, 148, 0.2);
+  border-radius: 50%; /* Converts the square into a circle */
+  z-index: -1;
+  animation: bubbleMove 8s infinite ease-in;
+}
+
+
+
+
+@keyframes bubbleMove {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg); /* Move up within the .sqr height */
+    opacity: 0.2;
+  }
+}
+
+
+
 .numbers .numberCols {
   display: flex;
   flex-direction: column;
@@ -46,6 +79,7 @@
 }
 .transform .transformHeading {
   font-size: 30px;
+  margin-top: 30px;
 }
 .transform > p {
   font-size: 16px;
@@ -89,6 +123,19 @@
   width: 220px;
   padding: 15px 20px 20px 20px;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px rgba(200, 255, 255, 0.6);
+}
+
+.hovcha:hover{
+  background-color: #4d4d4d;
+}
+
+.buttonHover:hover{
+  background-color: #0095ff;
+}
+
+.purpleHover:hover{
+  background-color: purple;
 }
 
 .believeCardTitle {
