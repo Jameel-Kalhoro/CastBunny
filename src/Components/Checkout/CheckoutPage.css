@@ -4,18 +4,25 @@
     align-items: center;
     min-height: 100vh;
     padding: 1rem;
-    background-color: white;   
+    background-color: transparent;   
 }
 
 .form{
     max-width: 500px;
     width: 100%;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 25px 15px 0px black;
+    
 }
 
 .header{
     text-align: center;
     margin-bottom: 1.2rem;
-    color: black;
+    color: white;
+}
+
+.inputCheckout{
+    background-color: #fff;
+    color: red;
 }
