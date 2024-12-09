@@ -8,7 +8,7 @@ const CheckoutPage = ()=>{
 
 
     return(
-        <div className="container">
+        <div className="containerCheckout">
             <form className="form">
                 <h2 className="header">Checkout Payment</h2>
 
