@@ -27,6 +27,7 @@ import VoD from "./Components/VoD/VoD";
 import Chat from "./Components/Chat/Chat";
 import OTT from "./Components/OTT/OTT";
 import MultiStream from "./Components/MultiStreaming/MultiStreaming";
+import CheckoutPage from "./Components/Checkout/CheckoutPage";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -69,6 +70,7 @@ const App = () => {
           <Route path="/multiStream" element={<MultiStream />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/ott" element={<OTT />} />
+          <Route path="/checkout" element={<CheckoutPage/>} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
