@@ -3,20 +3,29 @@ import "./Integration.css";
 import { useState } from "react";
 import { Tabs, Tab, Card, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import yt from "../assets/yt.svg";
-import fb from "../assets/fb.svg";
-import insta from "../assets/instagram.svg";
+import yt from "../assets/icons8-youtube-48.png";
+import fb from "../assets/icons8-facebook-48.png";
+import insta from "../assets/icons8-instagram-50.png";
 import twitch from "../assets/twitch.svg";
-import x from "../assets/x.svg";
+import x from "../assets/icons8-twitterx-48.png";
 import vimeo from "../assets/vimeo.svg";
 import linkedin from "../assets/linkedin.svg";
 import tiktok from "../assets/tiktok.svg";
-import obs from "../assets/obs.svg";
-// import tricaster from "../assets/tricaster.svg";
-import zoom from "../assets/zoom.svg";
-import gopro from "../assets/gopro.svg";
+import obs from "../assets/icons8-obs-50.png";
+import tricaster from "../assets/icons8-tri-50.png";
+import zoom from "../assets/icons8-zoom-48.png";
+import gopro from "../assets/icons8-gopro-48.png";
 import streamlabs from "../assets/streamlabs.svg";
 import playstation from "../assets/playstation.svg";
+import xsplit from "../assets/icons8-xsplit-is-a-live-streaming-and-video-mixing-application-50.png";
+import woocommerce from "../assets/icons8-woocommerce-48.png";
+import xbox from "../assets/icons8-xbox-50.png";
+import wix from "../assets/icons8-wix-50.png";
+import shopify from "../assets/icons8-shopify-48.png";
+import amazon from "../assets/icons8-amazon-48.png";
+import etsy from "../assets/icons8-etsy-48.png";
+import dropbox from "../assets/icons8-dropbox-50.png";
+import gd from "../assets/icons8-google-drive-48.png";
 
 const Integration = () => {
   const [key, setKey] = useState("social");
@@ -86,7 +95,7 @@ const Integration = () => {
         title: "TriCaster",
         description:
           "Deliver a TV-grade experience to your viewers by combining TriCaster and CastBunny.",
-        image: yt,
+        image: tricaster,
       },
       {
         title: "Zoom",
@@ -110,7 +119,7 @@ const Integration = () => {
         title: "XSplit",
         description:
           "Deliver engaging video content to multiple platforms at once with XSplit and Restream.",
-        image: yt,
+        image: xsplit,
       },
       {
         title: "vMix",
@@ -161,7 +170,7 @@ const Integration = () => {
         title: "Xbox",
         description:
           "Broadcast your Xbox games live and connect with the online gaming community.",
-        image: yt,
+        image: xbox,
       },
       {
         title: "Capture card",
@@ -178,31 +187,31 @@ const Integration = () => {
         title: "WooCommerce",
         description:
           "Connect your WooCommerce store and let viewers buy directly from your stream.",
-        image: yt,
+        image: woocommerce,
       },
       {
         title: "Wix",
         description:
           "Showcase products from your Wix store and sell them live.",
-        image: yt,
+        image: wix,
       },
       {
         title: "Shopify",
         description:
           "Integrate your Shopify store and run live shopping events seamlessly.",
-        image: yt,
+        image: shopify,
       },
       {
         title: "Amazon",
         description:
           "Import Amazon products to promote and sell them during your streams.",
-        image: yt,
+        image: amazon,
       },
       {
         title: "Etsy",
         description:
           "Display your Etsy products on your stream and generate sales in real time.",
-        image: yt,
+        image: etsy,
       },
     ],
 
@@ -225,13 +234,13 @@ const Integration = () => {
         title: "DropBox",
         description:
           "Transform your existing Dropbox videos into exciting streams.",
-        image: yt,
+        image: dropbox,
       },
       {
         title: "Google Drive",
         description:
           "Import videos from your Google Drive and stream them live.",
-        image: yt,
+        image: gd,
       },
       {
         title: "Descript",
@@ -259,7 +268,9 @@ const Integration = () => {
                 alt={item.title}
                 className="tabCardImg"
               /> */}
-              <div className="image-placeholder"></div>
+              <div className="image-placeholder">
+                <img  src={item.image} alt="" />
+              </div>
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text className="tabCardDetails">
@@ -313,7 +324,7 @@ const Integration = () => {
         </Container>
       </div>
 
-      <div className="reachMoreViewersWrap multiStreamingGetStarted">
+      <div className="reachMoreViewersWrap multiStreamingGetStarted ccc">
         <div className="reachMoreText text-start">Get Started today!</div>
         <h4 className="multiStreamingGetStartedText text-center">
           Experience the satisfaction of reaching more viewers with CastBunny.
@@ -322,7 +333,7 @@ const Integration = () => {
         </h4>
         <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
           <Link to={"/signUp"}>
-            <button className="reachMoreBtn">Sign up now</button>
+            <button className="reachMoreBtn hhh">Sign up now</button>
           </Link>
         </div>
       </div>

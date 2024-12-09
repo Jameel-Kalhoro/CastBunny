@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-import fb from "../assets/fb.svg";
+import fb from "../assets/icons8-facebook-48.png";
 import { Link } from "react-router-dom";
 import homepageLight from "../assets/homepageLight.svg";
 import homepageDark from "../assets/homepageDark.svg";

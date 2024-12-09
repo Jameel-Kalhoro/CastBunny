@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import yt from "../assets/yt.svg";
 import discord from "../assets/discord.svg";
 import insta from "../assets/instagram.svg";
-import fb from "../assets/fb.svg";
+import fb from "../assets/icons8-facebook-48.png";
 import x from "../assets/x.svg";
 import tiktok from "../assets/tiktok.svg";
 

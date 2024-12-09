@@ -76,7 +76,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="sqr"></div>
+
 
       {/* <div className="numbers">
         <Container>
@@ -446,7 +446,7 @@ const AboutUs = () => {
           </Container>
         </div>
 
-        <div className="reachMoreViewersWrap multiStreamingGetStarted">
+        <div className="reachMoreViewersWrap multiStreamingGetStarted alignCenter">
           <div className="reachMoreText text-start">Get Started today!</div>
           <h4 className="multiStreamingGetStartedText text-center">
             Experience the satisfaction of reaching more viewers with CastBunny.

@@ -2,42 +2,15 @@
   margin-top: 30px;
 }
 
+.alignCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .aboutWrap .numbers {
   padding: 30px 80px 50px 0;
 }
-
-.sqr {
-  height: 400px;
-  width: 40%; /* Set width equal to height for a perfect circle */
-  border: 5px solid lightblue;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 10px;
-  align-self: center;
-  margin-top: -300px;
-  margin-left: 200px;
-  background-color: rgba(103, 102, 148, 0.2);
-  border-radius: 50%; /* Converts the square into a circle */
-  z-index: -1;
-  animation: bubbleMove 8s infinite ease-in;
-}
-
-
-
-
-@keyframes bubbleMove {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0.2;
-  }
-  100% {
-    transform: rotate(360deg); /* Move up within the .sqr height */
-    opacity: 0.2;
-  }
-}
-
-
 
 .numbers .numberCols {
   display: flex;
