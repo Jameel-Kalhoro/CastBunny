@@ -88,7 +88,7 @@
 }
 
 .believeCard {
-  text-align: center;
+  text-align: left;
   background-color: black;
   opacity: 0.8;
   z-index: -1;
@@ -97,6 +97,7 @@
   padding: 15px 20px 20px 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 10px rgba(200, 255, 255, 0.6);
+  border: 5px solid white;
 }
 
 .hovcha:hover{
@@ -124,19 +125,46 @@
 }
 
 .believeCard.unity {
-  margin-top: 50px;
+  margin-top: 115px;
+  height: 16.5rem;
+  rotate: -30deg;
+}
+
+.believeCard.unity:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 .believeCard.faith {
-  margin-top: 150px;
+  margin-top: 20px;
+  height: 15.5rem;
+}
+
+.believeCard.faith:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 .believeCard.focus {
-  margin-top: 115px;
+  margin-top: 145px;
+  height: 15.5rem;
+  rotate: 22deg;
+}
+
+.believeCard.focus:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 .believeCard.empathy {
-  margin-top: 180px;
+  margin-top: 230px;
+  height: 15.5rem;
+  rotate: -5deg;
+}
+
+.believeCard.empathy:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 .lightTheme .services-container {
@@ -436,7 +464,10 @@
   }
 
   .believe {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5x solid white;
   }
 
   .officeVertical {
