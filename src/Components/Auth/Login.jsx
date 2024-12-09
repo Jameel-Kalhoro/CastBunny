@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const login = () => {
   return (
-    <div className="signupWrap">
+    <div className="signupWrap aaa">
       <div className="signupHeading">Cast Bunny</div>
       <div className="signupCard">
         <div className="cardTitle">Login</div>
