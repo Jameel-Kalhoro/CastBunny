@@ -3,6 +3,13 @@ import "./Blog.css";
 import { IoSearch } from "react-icons/io5";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import blog1 from "../assets/blog1.jpg";
+import blog2 from "../assets/blog2.jpg";
+import blog3 from "../assets/blog3.jpg";
+import blog4 from "../assets/blog4.jpg";
+import blog5 from "../assets/blog5.jpg";
+import blog6 from "../assets/blog6.jpg";
+import blog7 from "../assets/blog7.jpg";
 
 const Blog = () => {
   var a;
@@ -19,6 +26,7 @@ const Blog = () => {
         "Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.",
       author: "Mr. Blogger",
       date: "01 Month, 2024",
+      image: blog2,
     },
     {
       id: 2,
@@ -27,6 +35,7 @@ const Blog = () => {
         "Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.",
       author: "Mr. Blogger",
       date: "01 Month, 2024",
+      image: blog3,
     },
     {
       id: 3,
@@ -35,6 +44,7 @@ const Blog = () => {
         "Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.",
       author: "Mr. Blogger",
       date: "01 Month, 2024",
+      image: blog4,
     },
     {
       id: 4,
@@ -43,6 +53,7 @@ const Blog = () => {
         "This is additional content for testing the Read More functionality.",
       author: "Mr. Blogger",
       date: "02 Month, 2024",
+      image: blog5,
     },
     {
       id: 5,
@@ -51,6 +62,7 @@ const Blog = () => {
         "Explore the interesting points written here. Curabitur sit amet sapien.",
       author: "Mr. Blogger",
       date: "03 Month, 2024",
+      image: blog6,
     },
     {
       id: 6,
@@ -58,6 +70,7 @@ const Blog = () => {
       content: "Vivamus suscipit lorem nec ipsum fermentum consequat.",
       author: "Mr. Blogger",
       date: "04 Month, 2024",
+      image: blog7,
     },
   ]; // Function to load more cards
   const loadMore = () => {
@@ -122,7 +135,7 @@ const Blog = () => {
           <Row>
             <Col md={7} className="featureLeft">
               <h4>Featured</h4>
-              <div></div>
+              <div className="card-image-placeholder"> <img src={blog1} alt="" /> </div>
             </Col>
             <Col
               md={5}
@@ -155,7 +168,7 @@ const Blog = () => {
                 <Col key={blog.id} xs={12} md={4} lg={4} className="mb-4">
                   <div className="card-wrapper">
                     <div className="card">
-                      <div className="card-image-placeholder"></div>
+                      <div className="card-image-placeholder"> <img src={blog.image} alt="" /></div>
                       <h3>{blog.title}</h3>
                       <p>{blog.content}</p>
                       <p className="card-meta">
