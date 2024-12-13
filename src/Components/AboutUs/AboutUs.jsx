@@ -132,7 +132,6 @@ const AboutUs = () => {
         <div className="believeDetails">
           <Container>
             <Row>
-            <div className="res">
               <Col md={3}>
                 <div className="believeCard unity">
                   <div className="believeCardTitle">Unity</div>
@@ -152,8 +151,7 @@ const AboutUs = () => {
                   </div>
                 </div>
               </Col>
-              </div>
-              <div className="res">
+              
               <Col md={3}>
                 <div className="believeCard focus">
                   <div className="believeCardTitle">Focus</div>
@@ -173,7 +171,7 @@ const AboutUs = () => {
                   </div>
                 </div>
               </Col>
-              </div>
+              
             </Row>
           </Container>
           
