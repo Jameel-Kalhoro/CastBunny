@@ -88,6 +88,11 @@
   align-items: center;
 }
 
+.intIcons{
+  width: 50px;
+  height: 50px;
+}
+
 .hhh:hover{
     background-color: purple;
 }

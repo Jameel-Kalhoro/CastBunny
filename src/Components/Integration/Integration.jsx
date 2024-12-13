@@ -26,6 +26,13 @@ import amazon from "../assets/icons8-amazon-48.png";
 import etsy from "../assets/icons8-etsy-48.png";
 import dropbox from "../assets/icons8-dropbox-50.png";
 import gd from "../assets/icons8-google-drive-48.png";
+import vmix from "../assets/vmixlogo-40x40.jpg";
+import wirecast from "../assets/wirecast1.png";
+import wirecastgo from "../assets/wirecastgo.png";
+import larix from "../assets/larix.png";
+import capturecard from "../assets/capturecard.png";
+import elagato from "../assets/elagato.png";
+import descript from "../assets/descript.png";
 
 const Integration = () => {
   const [key, setKey] = useState("social");
@@ -113,7 +120,7 @@ const Integration = () => {
         title: "WireCast",
         description:
           "Create high-quality live streams with the power of Wirecast and Restream.",
-        image: yt,
+        image: wirecast,
       },
       {
         title: "XSplit",
@@ -125,7 +132,7 @@ const Integration = () => {
         title: "vMix",
         description:
           "Broaden your audience by pairing your vMix setup with CastBunny's simulcasting abilities.",
-        image: yt,
+        image: vmix,
       },
       {
         title: "Streamlabs",
@@ -141,13 +148,13 @@ const Integration = () => {
         title: "Wirecast Go",
         description:
           "Produce and stream live videos from your iOS device with Wirecast Go and Restream.",
-        image: yt,
+        image: wirecastgo,
       },
       {
         title: "Larix Broadcaster",
         description:
           "Create live content from your phone by connecting Restream with Larix’s portable solution.",
-        image: yt,
+        image: larix,
       },
       {
         title: "Mobile Steamlabs",
@@ -176,7 +183,7 @@ const Integration = () => {
         title: "Capture card",
         description:
           "Capture your gameplay from any console and stream it live using a capture card.",
-        image: yt,
+        image: capturecard,
       },
     ],
 
@@ -222,7 +229,7 @@ const Integration = () => {
         title: "Elagato Stream Deck",
         description:
           "Streamline your live production with hotkeys on your Stream Deck.",
-        image: yt,
+        image: elagato,
       },
       {
         title: "Youtube (import)",
@@ -246,7 +253,7 @@ const Integration = () => {
         title: "Descript",
         description:
           "Export your Restream recordings to Descript and repurpose your content.",
-        image: yt,
+        image: descript,
       },
     ],
   };
@@ -269,7 +276,7 @@ const Integration = () => {
                 className="tabCardImg"
               /> */}
               <div className="image-placeholder">
-                <img  src={item.image} alt="" />
+                <img className="intIcons"  src={item.image} alt="" />
               </div>
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>

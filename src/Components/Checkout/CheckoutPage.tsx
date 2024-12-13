@@ -1,6 +1,8 @@
 import React from "react";
 import { TextField, Button, MenuItem, Select, FormControl, InputLabel, Grid } from "@mui/material";
 import "./CheckoutPage.css";
+import paypal from "../assets/paypal.png";
+import creditcard from "../assets/creditcard.png";
 
 
 const CheckoutPage = ()=>{
@@ -24,10 +26,12 @@ const CheckoutPage = ()=>{
               <div className="payment-method">
                 <label>
                   <input type="radio" name="payment" value="credit-card" defaultChecked />
+                  <img src={creditcard}></img>
                   Credit Card
                 </label>
                 <label>
                   <input type="radio" name="payment" value="paypal" />
+                  <img src={paypal}></img>
                   PayPal
                 </label>
               </div>

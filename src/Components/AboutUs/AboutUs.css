@@ -463,11 +463,22 @@
     font-size: calc(0.75rem + 0.5vw);
   }
 
+  
+
   .believe {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5x solid white;
+    
+  }
+
+  .res{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .officeVertical {
@@ -535,6 +546,38 @@
 
   .lightTheme .numbers .numberCols .verticalLine {
     background-color: #0b0011 !important;
+  }
+
+  .believeCard.unity {
+    margin-top: 10px;
+    height: 15.5rem;
+    rotate: 0deg;
+    
+  }
+
+  /* .believeCard.unity .believeCardTitle{
+    font-size: 1.5rem;
+  } 
+
+  .believeCard.unity .believeCardDesc{
+      font-size: 0.9rem;
+  } */
+  
+  .believeCard.faith {
+    margin-top: 10px;
+    height: 15.5rem;
+  }
+  
+  .believeCard.focus {
+    margin-top: 10px;
+    height: 15.5rem;
+    rotate: 0deg;
+  }
+  
+  .believeCard.empathy {
+    margin-top: 10px;
+    height: 15.5rem;
+    rotate: 0deg;
   }
 }
 
