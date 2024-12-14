@@ -372,10 +372,6 @@
   width: 90%;
 }
 
-.res{
-  display: flex;
-  flex-direction: row;
-}
 
 @media screen and (max-width: 768px) {
   .imageGallery.display {
@@ -480,16 +476,9 @@
     
   }
 
-  .res{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
 
   .believeCardTitle{
-    font-size: 10.5rem;
+    font-size: 5.5rem;
   }
 
   .officeVertical {
@@ -566,13 +555,13 @@
     
   }
 
-  /* .believeCard.unity .believeCardTitle{
+  .believeCardTitle{
     font-size: 1.5rem;
   } 
 
-  .believeCard.unity .believeCardDesc{
+  .believeCardDesc{
       font-size: 0.9rem;
-  } */
+  }
   
   .believeCard.faith {
     margin-top: 10px;

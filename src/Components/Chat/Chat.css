@@ -1,3 +1,70 @@
+/* Custom tab styles */
+.custom-tabs .nav-tabs {
+  margin-top: 50px;
+  border-bottom: 2px solid #5c258d; /* Border for the tabs container */
+  background-color: #1a0f2a; /* Dark background */
+}
+
+.custom-tabs .nav-item {
+  margin-right: 20px; /* Space between tabs */
+}
+
+.custom-tabs .nav-link {
+  color: #b0b0b0; /* Light color for inactive tabs */
+  font-weight: 500;
+  text-transform: uppercase; /* Optional: Capitalize tab titles */
+  border: none; /* Remove borders from tabs */
+  padding: 10px 15px;
+}
+
+.custom-tabs .nav-link.active {
+  color: #fff; /* White text color for active tab */
+  background-color: #5c258d; /* Active tab background color */
+  border-radius: 4px 4px 0 0; /* Rounded top corners for active tab */
+  border-bottom: 2px solid #5c258d; /* Border below active tab */
+}
+
+.custom-tabs .nav-link:hover {
+  color: #ffffff; /* Hover state for inactive tabs */
+  background-color: #4a1e4d; /* Hover background */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .custom-tabs .nav-tabs {
+    display: block; /* Stack the tabs vertically */
+    text-align: center; /* Center-align the tabs */
+  }
+
+  .custom-tabs .nav-item {
+    margin-right: 0; /* Remove right margin for stacked tabs */
+    margin-bottom: 10px; /* Add some space between vertically stacked tabs */
+  }
+
+  .custom-tabs .nav-link {
+    padding: 12px 20px; /* Increase padding for easier tap on small screens */
+    font-size: 14px; /* Smaller text on mobile */
+  }
+
+  .custom-tabs .nav-link.active {
+    background-color: #5c258d; /* Keep active tab style the same */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-tabs .nav-link {
+    font-size: 12px; /* Smaller text on very small screens */
+    padding: 8px 15px; /* Adjust padding further for smaller screens */
+  }
+
+  .custom-tabs .nav-tabs {
+    font-size: 12px; /* Smaller font for the tab container */
+  }
+}
+
+
+
+
 .chatWrap {
   margin-top: 10px;
 }
