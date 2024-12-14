@@ -63,7 +63,7 @@ const Footer = () => {
                   <Link to="/chat" className="mediaKit">
                     ChatBot{" "}
                   </Link>
-                  <Link to="/chat" className="mediaKit">
+                  <Link to="/tipbot" className="mediaKit">
                     TipBot{" "}
                   </Link>
                   <Link to="/ott" className="mediaKit">

@@ -6,6 +6,9 @@
     min-height: 100vh;
     background-color: transparent;
     padding: 1rem;
+    background: url('../assets/about-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   
   .checkout-form {

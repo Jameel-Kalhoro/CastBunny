@@ -1,0 +1,200 @@
+.tipContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid transparent;
+  margin-bottom: 50px;
+  background: url("../assets/about-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tipbot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tipimgcont{
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.tipimgcont2{
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 30px;
+}
+
+.tipimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.tipButton{
+  font-size: calc(1rem + 0.4vw);
+  background-color: inherit;
+  color: white;
+  padding: 5px 15px;
+  border: 2px solid white;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.tipContainer button:hover{
+  background-color: #0095ff;
+}
+
+.lightTheme .tipContainer button{
+  color: black;
+  border: 2px solid black;
+} 
+
+.tipbot-feature-section {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.tipbot-feature-section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.tipbot-feature-section:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bitpay{
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.text-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  
+}
+
+.tipcheck{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.tipbold{
+  font-size: x-large;
+}
+
+.tipSecion{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.tipIcon{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4c30ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4c30ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tip-text{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.tipTitle{
+  margin: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tipDescription{
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.fade-section {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Apply Animation When Section is Visible */
+.fade-section {
+  will-change: opacity, transform;
+}
+
+.fade-section:nth-child(even) {
+  transition-delay: 0.2s;
+}
+
+/* Key to Trigger Visibility Using Scroll */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-section {
+    animation: fadeInUp 0.8s forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .tipContainer{
+    flex-direction: column-reverse;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .tipimgcont{
+    max-width: 100%;
+    height: 200px;
+  }
+
+}

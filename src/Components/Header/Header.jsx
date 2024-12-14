@@ -57,7 +57,7 @@ const Header = ({ toggleTheme, checked }) => {
                 <Dropdown.Item as={Link} to="/chat">
                   ChatBot
                 </Dropdown.Item>{" "}
-                <Dropdown.Item as={Link} to="/chat">
+                <Dropdown.Item as={Link} to="/tipbot">
                   TipBot
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/ott">
