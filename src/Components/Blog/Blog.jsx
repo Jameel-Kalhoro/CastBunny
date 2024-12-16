@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Blog.css";
 import { IoSearch } from "react-icons/io5";
 import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import blog1 from "../assets/blog1.jpg";
 import blog2 from "../assets/blog2.jpg";
 import blog3 from "../assets/blog3.jpg";
@@ -11,7 +11,9 @@ import blog5 from "../assets/blog5.jpg";
 import blog6 from "../assets/blog6.jpg";
 import blog7 from "../assets/blog7.jpg";
 
+
 const Blog = () => {
+  const navigate = useNavigate();
   var a;
   if (window.innerWidth < 768) {
     a = 2;
@@ -78,6 +80,12 @@ const Blog = () => {
       setVisibleCards((prev) => prev + 2);
     } else setVisibleCards((prev) => prev + 3);
   };
+
+  const handleCardClick = (blog) => {
+    navigate(`/blogview/${blog.id}`, { state: { blog } });
+  };
+
+  
 
   return (
     <div className="blogWrap">
@@ -166,7 +174,7 @@ const Blog = () => {
             <Row>
               {blogData.slice(0, visibleCards).map((blog) => (
                 <Col key={blog.id} xs={12} md={4} lg={4} className="mb-4">
-                  <div className="card-wrapper">
+                  <div className="card-wrapper" onClick={()=>{handleCardClick(blog)}}>
                     <div className="card">
                       <div className="card-image-placeholder"> <img src={blog.image} alt="" /></div>
                       <h3>{blog.title}</h3>
@@ -189,6 +197,8 @@ const Blog = () => {
             </button>
           </div>
         )}
+
+    
       </div>
 
       <div className="reachMoreViewersWrap">

@@ -29,6 +29,7 @@ import OTT from "./Components/OTT/OTT";
 import MultiStream from "./Components/MultiStreaming/MultiStreaming";
 import CheckoutPage from "./Components/Checkout/CheckoutPage";
 import TipBot from "./Components/TipBot/TipBot";
+import BlogView from "./Components/BlogView/BlogView";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -73,6 +74,7 @@ const App = () => {
           <Route path="/ott" element={<OTT />} />
           <Route path="/checkout" element={<CheckoutPage/>} />
           <Route path="/tipbot" element={<TipBot/>} />
+          <Route path="/blogview/:id" element={<BlogView/>} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

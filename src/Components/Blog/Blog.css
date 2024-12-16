@@ -143,6 +143,12 @@
   padding: 2px !important; /* Space between the gradient border and the card */
 }
 
+.card-wrapper:hover{
+  box-shadow: 0p 10px 20px 0px black;
+  cursor: pointer;
+  size: 1.5rem;
+}
+
 .card {
   background-color: var(--bg-color) !important;
   border-radius: 15px !important; /* Apply rounded corners to the card content */
