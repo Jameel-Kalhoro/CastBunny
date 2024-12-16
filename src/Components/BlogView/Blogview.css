@@ -19,6 +19,8 @@
 .blogcontent{
     margin-top: 50px;
     font-size: 1.5rem;
+    text-align: justify;
+    margin: 20px;
 }
 
 @media screen and (max-width: 768px){

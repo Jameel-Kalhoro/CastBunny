@@ -17,7 +17,28 @@ const BlogView = () => {
     <div className="blogviewcontainer">
       <h1 className="blogtitle">{blog.title}</h1>
       <img src={blog.image} alt={blog.title} className="blogimg" />
-      <p className="blogcontent">{blog.content}</p>
+      <p className="blogcontent">{blog.content} 
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      Curabitur sit amet sapien nec ipsum fermentum consequat. Vivamus suscipit.
+      </p>
       <p>
         By <strong>{blog.author}</strong> on {blog.date}
       </p>
