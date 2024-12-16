@@ -5,9 +5,6 @@
   align-items: center;
   border: 5px solid transparent;
   margin-bottom: 50px;
-  background: url("../assets/about-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .tipbot-container {
@@ -20,7 +17,7 @@
 .tipimgcont{
   width: 500px;
   height: 500px;
-  background-color: gray;
+  background-color: transparent;
   border-radius: 30px;
   margin: 10px;
 }
@@ -30,6 +27,7 @@
   height: 200px;
   background-color: gray;
   border-radius: 30px;
+  box-shadow: 0px 10px 20px 0px black;
 }
 
 .tipimg{
@@ -165,6 +163,55 @@
 
 .fade-section:nth-child(even) {
   transition-delay: 0.2s;
+}
+
+/* Container for snowflakes */
+.snowflake-container {
+  position: relative;
+  overflow: hidden;
+  background: transparent; /* No gradient, just transparent */
+  background: url("../assets/about-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Individual snowflake styles */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: white; /* Snowflake color */
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Glow effect */
+  opacity: 0.8; /* Slight transparency */
+  animation: fall linear, sway ease-in-out;
+  
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(400vh); /* Move to bottom */
+  }
+}
+
+/* Swaying side-to-side animation */
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Sway by 10px */
+  }
+}
+
+.tipImage{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px black;
 }
 
 /* Key to Trigger Visibility Using Scroll */

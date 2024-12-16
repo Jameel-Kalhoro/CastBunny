@@ -1,40 +1,88 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './TipBot.css';
-import checkmark from "../assets/checkmark.png";
 import { Link } from 'react-router-dom';
+import animation from "../assets/Animation - 1734348537988.gif";
+import tipbotimg1 from "../assets/tipbotimg1.jpg";
+import tipbotimg2 from "../assets/tipbotimg2.jpg";
+import tipbotimg3 from "../assets/tipbotimg3.jpg";
+import tipbotimg4 from "../assets/tipbotimg4.jpg";
+import tipbotimg5 from "../assets/tipbotimg5.jpg";
+import tipbotimg6 from "../assets/tipbotimg6.jpg";
+
+
 
 const TipBot= () => {
+  const snowflakeContainer = useRef(null);
   const tipbotData = [
     {
       title: 'Enhance Your Tipping Page with Premium Features',
-      feature: 'TipBots provides a sleek, professional tipping page with advanced features to engage your audience and offer a variety of payment methods.'
+      feature: 'TipBots provides a sleek, professional tipping page with advanced features to engage your audience and offer a variety of payment methods.',
+      image: tipbotimg1
     },
     {
       title: 'Customize Your Tipping Page',
-      feature: 'Make your tipping page uniquely yours by adding your native currency, uploading your branding, and setting custom amount presets.'
+      feature: 'Make your tipping page uniquely yours by adding your native currency, uploading your branding, and setting custom amount presets.',
+      image: tipbotimg2
     },
     {
       title: 'Real-Time Stream Alerts',
-      feature: 'Celebrate with your community in real-time with customizable stream alerts, easily tailored to match your existing alerts using our widget designer.'
+      feature: 'Celebrate with your community in real-time with customizable stream alerts, easily tailored to match your existing alerts using our widget designer.',
+      image: tipbotimg3
     },
     {
       title: 'Engage and Monetize Effortlessly',
-      feature: 'Enhance viewer engagement by allowing them to request songs or videos in exchange for tips. Turn your streams into interactive experiences.'
+      feature: 'Enhance viewer engagement by allowing them to request songs or videos in exchange for tips. Turn your streams into interactive experiences.',
+      image: tipbotimg4
     },
     {
       title: 'Keep Your Stream Clean and Safe',
-      feature: 'Avoid disruptive messages from tipping trolls with our customizable message filtering. Say goodbye to inappropriate alerts and maintain a positive streaming environment.'
+      feature: 'Avoid disruptive messages from tipping trolls with our customizable message filtering. Say goodbye to inappropriate alerts and maintain a positive streaming environment.',
+      image: tipbotimg5
     },
     {
       title: 'Multiple Payment Methods',
-      feature: 'Cater to different preferences with a variety of secure payment options, ensuring everyone in your community can support you.'
+      feature: 'Cater to different preferences with a variety of secure payment options, ensuring everyone in your community can support you.',
+      image: tipbotimg6
     }
   ];
+
+  useEffect(() => {
+    const container = snowflakeContainer.current;
+
+    // Function to create a single snowflake
+    const createSnowflake = () => {
+      const snowflake = document.createElement("div");
+      snowflake.classList.add("snowflake");
+
+      const size = Math.random() * 5 + 5; // Random size between 5px and 10px
+      const position = Math.random() * window.innerWidth; // Random horizontal position
+      const duration = Math.random() * 20 + 20; // Random falling duration (5-10 seconds)
+      const swayDuration = Math.random() * 3 + 2; // Random sway duration (2-5 seconds)
+
+      snowflake.style.width = `${size}px`;
+      snowflake.style.height = `${size}px`;
+      snowflake.style.left = `${position}px`;
+      snowflake.style.animationDuration = `${duration}s, ${swayDuration}s`;
+
+      container.appendChild(snowflake);
+
+      // Remove snowflake after animation ends
+      setTimeout(() => {
+        container.removeChild(snowflake);
+      }, duration * 9000);
+    };
+
+    // Generate snowflakes continuously
+    const interval = setInterval(createSnowflake, 200);
+
+    // Cleanup on unmount
+    return () => clearInterval(interval);
+  }, []);
 
   
 
   return (
-    <div>
+    <div className='snowflake-container' ref={snowflakeContainer}>
       <div className='tipContainer'>
         <div>
           <h1>Introducing TipBots</h1>
@@ -42,7 +90,7 @@ const TipBot= () => {
           for Content Creators</h3>
           <button className='tipButton'>Setup TipBot</button>
         </div>
-        <div className='tipimgcont'></div>
+        <div className='tipimgcont'><img className='tipImage' src={animation} alt="" /></div>
       </div>
       <div className="tipbot-container">
       {tipbotData.map((item, index) => (
@@ -52,7 +100,8 @@ const TipBot= () => {
           style={{ animationDelay: `${index * 1}s` }}
         >
           <div className="tipimgcont2">
-            <img
+            <img className='tipImage'
+            src={item.image} 
             />
           </div>
           <h1>{item.title}</h1>
