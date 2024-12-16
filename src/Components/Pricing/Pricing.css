@@ -1,6 +1,11 @@
 .pricingWrap {
   /* background-color: #290d29; */
 }
+
+.pricingtablerows{
+  transform: rotate();
+}
+
 .pricingHeader {
   display: flex;
   flex-direction: column;

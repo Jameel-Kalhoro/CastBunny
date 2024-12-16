@@ -49,6 +49,8 @@ const Pricing = () => {
     },
   ];
 
+  const plans = ["Free", "Standard", "Professional", "Premium", "Business"];
+
   return (
     <div className="pricingWrap">
       <div className="pricingHeader">
@@ -339,176 +341,127 @@ const Pricing = () => {
           </div>
           {isPricingTableVisible && (
             <Table responsive bordered hover className="customTable">
-              <thead>
-                <tr>
-                  <th className="multiHeading borderRight">Multi Streaming</th>
-                  <th className="borderRight">
-                    Free Plan <br />{" "}
-                    <span
-                      style={{
-                        fontFamily: "Titillium Web, sans-serif",
-                        fontWeight: "300",
-                        fontSize: "12px",
-                        letterSpacing: ".5px",
-                      }}
-                    >
-                      $0/ forever
-                    </span>
-                  </th>
-                  <th className="borderRight">
-                    Standard <br />
-                    <span
-                      style={{
-                        fontFamily: "Titillium Web, sans-serif",
-                        fontWeight: "300",
-                        fontSize: "12px",
-                        letterSpacing: ".5px",
-                      }}
-                    >
-                      $15/ month
-                    </span>
-                  </th>
-                  <th className="borderRight">
-                    Professional <br />
-                    <span
-                      style={{
-                        fontFamily: "Titillium Web, sans-serif",
-                        fontWeight: "300",
-                        fontSize: "12px",
-                        letterSpacing: ".5px",
-                      }}
-                    >
-                      $39/ month
-                    </span>
-                  </th>
-                  <th className="borderRight">
-                    Business <br />
-                    <span
-                      style={{
-                        fontFamily: "Titillium Web, sans-serif",
-                        fontWeight: "300",
-                        fontSize: "12px",
-                        letterSpacing: ".5px",
-                      }}
-                    >
-                      $79/ month
-                    </span>
-                  </th>
-                  <th className="borderRight">
-                    Enterprise <br />
-                    <span
-                      style={{
-                        fontFamily: "Titillium Web, sans-serif",
-                        fontWeight: "300",
-                        fontSize: "12px",
-                        letterSpacing: ".5px",
-                      }}
-                    >
-                      $249/ month
-                    </span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {features.map((feature, index) => (
+            <thead>
+              <tr>
+                <th className="multiHeading borderRight">Multi Streaming</th>
+                <th className="borderRight">
+                  Free Plan <br />
+                  <span className="priceText">$0/ forever</span>
+                </th>
+                <th className="borderRight">
+                  Standard <br />
+                  <span className="priceText">$15/ month</span>
+                </th>
+                <th className="borderRight">
+                  Professional <br />
+                  <span className="priceText">$39/ month</span>
+                </th>
+                <th className="borderRight">
+                  Business <br />
+                  <span className="priceText">$79/ month</span>
+                </th>
+                <th className="borderRight">
+                  Enterprise <br />
+                  <span className="priceText">$249/ month</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature, index) => {
+                return (
                   <tr key={index}>
                     <td>{feature.name}</td>
-                    {feature.support.map((isSupported, idx) => (
-                      <td key={idx} className="text-center">
-                        {isSupported ? (
-                          <span className="tick-icon">
-                            ✔
-                          </span> /* Use the tick-icon class */
-                        ) : (
-                          ""
-                        )}
-                      </td>
-                    ))}
+                    {feature.support.map((isSupported, idx) => {
+                      return (
+                        <td key={idx}>
+                          {isSupported ? (
+                            <span className="text-center">✔️</span>
+                          ) : (
+                            <span className="text-center">❌</span>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
-                ))}
-              </tbody>
-
-              <thead>
-                <tr>
-                  <th className="multiHeading">CastBunny Studio</th>
-                  {features[0].options.map((option, index) => (
-                    <th></th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {features.map((feature, index) => (
+                );
+              })}
+            </tbody>
+            <thead>
+              <tr>
+              <th className="multiHeading borderRight">Cast Bunny Studio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature, index) => {
+                return (
                   <tr key={index}>
                     <td>{feature.name}</td>
-                    {feature.support.map((isSupported, idx) => (
-                      <td key={idx} className="text-center">
-                        {isSupported ? (
-                          <span className="tick-icon">
-                            ✔
-                          </span> /* Use the tick-icon class */
-                        ) : (
-                          ""
-                        )}
-                      </td>
-                    ))}
+                    {feature.support.map((isSupported, idx) => {
+                      return (
+                        <td key={idx}>
+                          {isSupported ? (
+                            <span className="text-center">✔️</span>
+                          ) : (
+                            <span className="text-center">❌</span>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
-                ))}
-              </tbody>
-
-              <thead>
-                <tr>
-                  <th className="multiHeading">Pre recorded Live Streams</th>
-                  {features[0].options.map((option, index) => (
-                    <th></th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {features.map((feature, index) => (
+                );
+              })}
+            </tbody>
+            <thead>
+              <tr>
+              <th className="multiHeading borderRight">Pre Recorded Live Streams</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature, index) => {
+                return (
                   <tr key={index}>
                     <td>{feature.name}</td>
-                    {feature.support.map((isSupported, idx) => (
-                      <td key={idx} className="text-center">
-                        {isSupported ? (
-                          <span className="tick-icon">
-                            ✔
-                          </span> /* Use the tick-icon class */
-                        ) : (
-                          ""
-                        )}
-                      </td>
-                    ))}
+                    {feature.support.map((isSupported, idx) => {
+                      return (
+                        <td key={idx}>
+                          {isSupported ? (
+                            <span className="text-center">✔️</span>
+                          ) : (
+                            <span className="text-center">❌</span>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
-                ))}
-              </tbody>
-
-              <thead>
-                <tr>
-                  <th className="multiHeading">For teams</th>
-                  {features[0].options.map((option, index) => (
-                    <th></th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {features.map((feature, index) => (
+                );
+              })}
+            </tbody>
+            <thead>
+              <tr>
+              <th className="multiHeading borderRight">For Teams</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature, index) => {
+                return (
                   <tr key={index}>
                     <td>{feature.name}</td>
-                    {feature.support.map((isSupported, idx) => (
-                      <td key={idx} className="text-center">
-                        {isSupported ? (
-                          <span className="tick-icon">
-                            ✔
-                          </span> /* Use the tick-icon class */
-                        ) : (
-                          ""
-                        )}
-                      </td>
-                    ))}
+                    {feature.support.map((isSupported, idx) => {
+                      return (
+                        <td key={idx}>
+                          {isSupported ? (
+                            <span className="text-center">✔️</span>
+                          ) : (
+                            <span className="text-center">❌</span>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
-                ))}
-              </tbody>
-            </Table>
+                );
+              })}
+            </tbody>
+          </Table>                              
           )}
         </div>
       </div>
