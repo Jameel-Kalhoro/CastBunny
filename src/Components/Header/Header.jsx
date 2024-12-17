@@ -160,7 +160,17 @@ const Header = ({ toggleTheme, checked }) => {
                       handleMenu();
                     }}
                   >
-                    Chat Box & Donations
+                    Chat
+                  </Link>
+                  <Link
+                    to="/tipbot"
+                    className="smallMenuLink"
+                    onClick={() => {
+                      handleMenuToggle();
+                      handleMenu();
+                    }}
+                  >
+                    Tipbot
                   </Link>
                   <Link
                     to="/ott"
