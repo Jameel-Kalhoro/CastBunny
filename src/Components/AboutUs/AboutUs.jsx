@@ -2,20 +2,10 @@ import React from "react";
 import "./AboutUs.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import {
-  FaHeadphones,
-  FaCloud,
-  FaRocket,
-  FaShieldAlt,
-  FaClipboardList,
-  FaCogs,
-} from "react-icons/fa";
-
+import { FaHeadphones, FaCloud, FaRocket, FaShieldAlt,} from "react-icons/fa";
 import fb from "../assets/fb.svg";
 import yt from "../assets/yt.svg";
 import discord from "../assets/discord.svg";
-
-import CountUp from "react-countup";
 
 const AboutUs = () => {
   return (
@@ -127,7 +117,7 @@ const AboutUs = () => {
         </Container>
       </div> */}
 
-      <div className="believe ">
+      <div className="believe">
         <div className="believeTitle  fw-bold">WE BELIEVE IN</div>
         <div className="believeDetails">
           <Container>

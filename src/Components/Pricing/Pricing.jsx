@@ -347,22 +347,47 @@ const Pricing = () => {
                 <th className="borderRight">
                   Free Plan <br />
                   <span className="priceText">$0/ forever</span>
+                  <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
+                    <Link to={"/signUp"}>
+                      <button className="reachMoreBtn">Get Started</button>
+                    </Link>
+                  </div>
                 </th>
                 <th className="borderRight">
                   Standard <br />
                   <span className="priceText">$15/ month</span>
+                  <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
+                    <Link to={"/checkout"}>
+                      <button className="reachMoreBtn">Choose this plan</button>
+                    </Link>
+                  </div>
                 </th>
                 <th className="borderRight">
                   Professional <br />
                   <span className="priceText">$39/ month</span>
+                  <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
+                    <Link to={"/checkout"}>
+                      <button className="reachMoreBtn">Choose this plan</button>
+                    </Link>
+                  </div>
                 </th>
                 <th className="borderRight">
                   Business <br />
                   <span className="priceText">$79/ month</span>
+                  <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
+                    <Link to={"/checkout"}>
+                      <button className="reachMoreBtn">Choose this plan</button>
+                    </Link>
+                  </div>
                 </th>
                 <th className="borderRight">
                   Enterprise <br />
                   <span className="priceText">$249/ month</span>
+                  <div className="reachMoreBtnWrap d-flex justify-content-center align-items-center">
+                    <Link to={"/checkout"}>
+                      <button className="reachMoreBtn">Choose this plan</button>
+                    </Link>
+                  </div>
                 </th>
               </tr>
             </thead>
