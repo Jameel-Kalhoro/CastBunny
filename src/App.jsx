@@ -30,6 +30,7 @@ import MultiStream from "./Components/MultiStreaming/MultiStreaming";
 import CheckoutPage from "./Components/Checkout/CheckoutPage";
 import TipBot from "./Components/TipBot/TipBot";
 import BlogView from "./Components/BlogView/BlogView";
+import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -75,6 +76,7 @@ const App = () => {
           <Route path="/checkout" element={<CheckoutPage/>} />
           <Route path="/tipbot" element={<TipBot/>} />
           <Route path="/blogview/:id" element={<BlogView/>} />
+          <Route path="/admin-dashboard" element={<AdminDashboard/>} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
