@@ -85,8 +85,8 @@ const TipBot= () => {
     <div className='snowflake-container' ref={snowflakeContainer}>
       <div className='tipContainer'>
         <div className='down'>
-          <h1 className='down1'>Introducing TipBots</h1>
-          <h3 className='down1'>Your Free Tipping Solution
+          <h1 >Introducing TipBots</h1>
+          <h3 >Your Free Tipping Solution
           for Content Creators</h3>
           <button className='tipButton'>Setup TipBot</button>
         </div>
@@ -112,21 +112,21 @@ const TipBot= () => {
     </div>
     <div className='bitpay'>
       <div className="reachMoreViewersWrap multiStreamingGetStarted alignCenter">
-        <div className="reachMoreText text-start">BunnyPay</div>
+        <div className="reachMoreText text-middle">BunnyPay</div>
         <h4 className="multiStreamingGetStartedText text-center">
           Our in-house payment method, BunnyPay, lets your community pay with credit
           cards or various local payment methods available in their regions.
         </h4>
       </div>
       <div className="reachMoreViewersWrap multiStreamingGetStarted alignCenter">
-        <div className="reachMoreText text-start">PayPal</div>
+        <div className="reachMoreText text-middle">PayPal</div>
         <h4 className="multiStreamingGetStartedText text-center">
         Trusted and widely used, PayPal offers a convenient checkout process for users with
         existing accounts.
         </h4>
       </div>
       <div className="reachMoreViewersWrap multiStreamingGetStarted alignCenter">
-        <div className="reachMoreText text-start">BitCoin</div>
+        <div className="reachMoreText text-middle">BitCoin</div>
         <h4 className="multiStreamingGetStartedText text-center">
         Leverage Blockonomics, a decentralized Bitcoin payment solution, to facilitate direct
         Bitcoin transactions. Enhance your existing wallets, issue anonymous invoices, and accept
@@ -138,7 +138,7 @@ const TipBot= () => {
     
     <h1 className='text-center'>Meet BunnyPay: Your Ultimate Tipping Solution</h1>
       
-      
+    
       <div className='tipSecion'> 
         <div className='tip-text fade-section'>
           <div className='tipIcon reachMoreText text-start'>✓</div>
