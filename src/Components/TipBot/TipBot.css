@@ -231,4 +231,11 @@
     align-content: center;
   }
 
+  .down1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+  }
+
 }
