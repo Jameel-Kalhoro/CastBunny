@@ -212,24 +212,6 @@
   border-radius: 10px;
 }
 
-/* Key to Trigger Visibility Using Scroll */
-@media (prefers-reduced-motion: no-preference) {
-  .fade-section {
-    animation: fadeInUp 0.8s forwards;
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
 @media screen and (max-width: 768px){
   .tipContainer{
     flex-direction: column-reverse;
@@ -240,6 +222,12 @@
   .tipimgcont{
     max-width: 100%;
     height: 200px;
+  }
+
+  .down{
+    display: flex;
+    align-items: center;
+    align-content: center;
   }
 
 }

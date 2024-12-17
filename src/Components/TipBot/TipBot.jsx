@@ -84,7 +84,7 @@ const TipBot= () => {
   return (
     <div className='snowflake-container' ref={snowflakeContainer}>
       <div className='tipContainer'>
-        <div>
+        <div className='down'>
           <h1>Introducing TipBots</h1>
           <h3>Your Free Tipping Solution
           for Content Creators</h3>
