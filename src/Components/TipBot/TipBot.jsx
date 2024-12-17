@@ -142,22 +142,22 @@ const TipBot= () => {
       <div className='tipSecion'> 
         <div className='tip-text fade-section'>
           <div className='tipIcon reachMoreText text-start'>✓</div>
-          <div className='tipTitle'>Advanced Chargeback Protection</div>
+          <div className='tipTitle text-middle'>Advanced Chargeback Protection</div>
         </div>
           <div className='tipDescription fade-section'>Why should you pay for trolling? BunnyPay covers 100% of your chargeback fees from malicious transactions.</div>
         <div className='tip-text fade-section'>
           <div className='tipIcon reachMoreText text-start'>✓</div>
-          <div className='tipTitle'>No Chargeback Fees</div>
+          <div className='tipTitle text-middle'>No Chargeback Fees</div>
         </div>
           <div className='tipDescription fade-section'>We auto-block known malicious tippers, ensuring you won't face repeat chargeback offenders.</div>
         <div className='tip-text fade-section'>
           <div className='tipIcon reachMoreText text-start'>✓</div>
-          <div className='tipTitle'>More Payment Options</div>
+          <div className='tipTitle text-middle'>More Payment Options</div>
         </div>
           <div className='tipDescription fade-section'>BunnyPay supports tips via credit cards and local payment methods, offering your community more ways to support you.</div>
         <div className='tip-text fade-section'>
           <div className='tipIcon reachMoreText text-start'>✓</div>
-          <div className='tipTitle'>Expanding Reach</div>
+          <div className='tipTitle text-middle'>Expanding Reach</div>
         </div>
           <div className='tipDescription fade-section'>BunnyPay is available in 15 countries, with more being added continuously.</div>
       </div>
