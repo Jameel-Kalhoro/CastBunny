@@ -16,11 +16,15 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    background-color: #0b0011;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 1);
     width: 80%;
     max-width: 1500px;
+  }
+
+  .lightTheme .checkout-form{
+    background-color: black;
   }
 
   .divinbetween{
