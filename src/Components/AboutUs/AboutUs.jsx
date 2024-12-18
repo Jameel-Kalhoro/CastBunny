@@ -439,7 +439,7 @@ const AboutUs = () => {
         </div>
 
         <div className="reachMoreViewersWrap multiStreamingGetStarted alignCenter">
-          <div className="reachMoreText text-start">Get Started today!</div>
+          <div className="reachMoreText text-center">Get Started today!</div>
           <h4 className="multiStreamingGetStartedText text-center">
             Experience the satisfaction of reaching more viewers with CastBunny.
             <br />

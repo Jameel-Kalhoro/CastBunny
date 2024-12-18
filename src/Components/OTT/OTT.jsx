@@ -180,7 +180,7 @@ const OTT = () => {
       </div>
 
       <div className="reachMoreViewersWrap  pricingCTA ">
-        <div className="reachMoreText text-start">Get Started today!</div>
+        <div className="reachMoreText text-center">Get Started today!</div>
         <h4 className="pricingCTAText text-center">
           Experience the satisfaction of reaching more viewers with CastBunny.
           <br />
