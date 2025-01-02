@@ -5,15 +5,20 @@
   display: none;
 }
 
+
+
 .darkDisplay {
   margin-bottom: -10px;
-  width: 40%;
+  width: 15%;
+  height: 15%;
 }
 
 .lightDisplay {
-  width: 40%;
+  width: 15%;
+  height: 15%;
   margin-bottom: -10px;
 }
+
 
 .HeaderWrap {
   padding: 20px 50px;
