@@ -39,11 +39,10 @@
 }
 
 .HeaderLinks {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.5px;
   display: flex;
-  justify-content: space-between;
   gap: 20 px;
   /* color: inherit; */
 }

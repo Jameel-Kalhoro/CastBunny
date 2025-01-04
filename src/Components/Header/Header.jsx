@@ -66,7 +66,7 @@ const Header = ({ toggleTheme, checked }) => {
               </Dropdown.Menu>
             </Dropdown>
             <Link to="/about" className="aboutUs">
-              About Us
+              About
             </Link>
             <Link to="/pricing" className="pricing">
               Pricing
@@ -75,7 +75,7 @@ const Header = ({ toggleTheme, checked }) => {
               Integrations
             </Link>{" "}
             <Link to="/contact" className="helpCenter">
-              Contact Us
+              Contact
             </Link>
           </div>
           <div className="HeaderAuth">
@@ -190,7 +190,7 @@ const Header = ({ toggleTheme, checked }) => {
               className={menuOpen ? `mobileHelp marginTop` : `mobileHelp`}
               onClick={handleMenu}
             >
-              About Us
+              About
             </Link>
             <Link to="/pricing" className="mobilePricing" onClick={handleMenu}>
               Pricing
@@ -200,7 +200,7 @@ const Header = ({ toggleTheme, checked }) => {
             </Link>
             <Link to="/contact" className="mobileAbout" onClick={handleMenu}>
               {" "}
-              Contact Us
+              Contact
             </Link>
             {checked ? (
               <div className="d-flex mt-4">
