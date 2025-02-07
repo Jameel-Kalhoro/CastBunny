@@ -4,8 +4,8 @@ import "./Header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { FiArrowRight, FiX } from "react-icons/fi";
-import darkLogo from "../assets/Full_balck.png";
-import lightLogo from "../assets/Full_white.png";
+import darkLogo from "../assets/Text black.png";
+import lightLogo from "../assets/Text white.png";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import ToggleButton from "../ToggleButton/toggleButton";
@@ -59,9 +59,6 @@ const Header = ({ toggleTheme, checked }) => {
                 </Dropdown.Item>{" "}
                 <Dropdown.Item as={Link} to="/tipbot">
                   TipBot
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/ott">
-                  OTT-Set-Top Box
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -171,16 +168,6 @@ const Header = ({ toggleTheme, checked }) => {
                     }}
                   >
                     Tipbot
-                  </Link>
-                  <Link
-                    to="/ott"
-                    className="smallMenuLink"
-                    onClick={() => {
-                      handleMenuToggle();
-                      handleMenu();
-                    }}
-                  >
-                    OTT-Set Top-Box
                   </Link>
                 </nav>
               </div>

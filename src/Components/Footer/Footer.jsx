@@ -66,9 +66,6 @@ const Footer = () => {
                   <Link to="/tipbot" className="mediaKit">
                     TipBot{" "}
                   </Link>
-                  <Link to="/ott" className="mediaKit">
-                    OTT-Set-top Box{" "}
-                  </Link>
                 </div>
               </div>
               <div className="Resources">
